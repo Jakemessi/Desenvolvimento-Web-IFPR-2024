@@ -1,0 +1,54 @@
+[Título nível 1] HTML
+É uma Linguagem de Marcação de Hipertexto baseada em tags criada na década de 1990 por Tim Berners-Lee para publicação de conteúdo em hipertexto, tais como, texto, imagem, áudio e vídeo, e que podem ser vinculados através de hyperlinks.
+
+[Título nível 1]TAGS
+As tags definem ao navegador a marcação de conteúdo. As tags tem funcionalidades específicas. Sem o uso de tags o navegador exibe um texto plano.
+As tags podem possuir atributos, ou seja, são parâmetros que definem algum tipo de informação extra ao navegador.
+
+[Título nível 2]Marcação de Títulos
+As tags de heading definem o título e possui seis níveis de importância.
+Este é um título 1
+Este é um título 2
+Este é um título 3
+Este é um título 4
+Este é um título 5
+Este é um título 6
+
+Pasta 1Trim_03_Exercicio_Texto
+
+[Título nível 2]Marcação de Parágrafos
+As tags de parágrafo definem a apresentação dos parágrafos.
+
+ Este é um parágrafo 
+Este é outro parágrafo
+
+[Título nível 2]Marcação para formatação de texto
+
+[Título nível 3]Negrito
+texto em negrito 
+ texto destacado 
+
+[Título nível 3] Itálico
+Texto Itálico
+Texto com ênfase
+
+[Título nível 3]Alterações na fonte
+This text is big
+This is some smaller text
+fonte em azul
+
+1. Crie um documento HTML apresentando o conteúdo em hipertexto. A formatação do
+texto deve conter as tags de: título, parágrafo, as duas formas de negrito, as duas formas
+de itálico, mudança de cor, quebra de linha.
+a. Crie o título nível 01, Minha Trajetória no IFPR – Campus Irati
+b. Crie o título nível 02 parágrafo com seu nome completo com a cor da fonte
+c. Crie um título nível 03 com o curso
+d. Crie um título nível 04 com a série
+e. Crie quatro títulos nível 02: Ingresso no IFPR, 1° Ano, 2° Ano e 3° Ano em itálico
+f. Para cada títulos crie um texto em que conte toda a sua trajetória dentro no IFPR.
+Conte a sua história! Realize destaques que marcaram essa história, os melhores
+momentos e os momentos que não foram tão bons .
+g. um título com Instituto Federal do Paraná Campus Irati em cor verde,
+h. um parágrafo com endereço completo do IFPR, inclusive com telefone separado por
+quebras de linhas
+2. Crie um documento HTML com 5 poemas ou letras de música devidamente formatados.
