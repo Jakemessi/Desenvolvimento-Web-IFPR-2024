@@ -1,0 +1,27 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: cornflowerblue;
+    text-align: justify;
+    text-shadow:20px;
+}
+h1{
+    background-color: indigo;
+    color: saddlebrown;
+    text-align: center;
+}
+h2{
+    background-color: navajowhite;
+    color: darkblue;
+}
+h3{
+    background-color: cadetblue;
+    color: olive;
+}
+p{
+    background-color: lightcyan;
+    color: black;
+}
+ul{
+    background-color: skyblue;
+    color: brown;
+}

@@ -1,0 +1,22 @@
+body{
+    background-color: lightgrey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: justify;
+}
+h1{
+    background-color: gray;
+    color: red;
+    font-weight: 900;
+    text-align: center;
+}
+h2{
+    font-style: italic;
+}
+p{
+    font-family: cursive;
+    font-stretch: extra-expanded;
+}
+ul {
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
