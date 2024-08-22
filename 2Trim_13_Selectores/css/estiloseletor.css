@@ -1,0 +1,36 @@
+div{
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    border: 2px solid yellow;
+    margin: 10px;
+}
+
+.quadro1{
+    background-color: aqua;
+}
+
+.quadro2{
+    background-color: black;
+    width: 2000px;
+}
+
+.quadro3{
+    background-color: rosybrown;
+    width: 600px;
+    border: 200px solid blue;
+    border-radius: 200px;
+}
+
+.quadro4{
+    font-family: ;
+    color: white;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}

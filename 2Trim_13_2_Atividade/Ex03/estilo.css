@@ -1,0 +1,143 @@
+body{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+.princ{
+    border: 2px solid black;
+    width: 8%;
+}
+.italia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.italia1{
+    width:40px;
+    height: 80px;
+    background-color: green;
+}
+.italia2{
+    width:40px;
+    height: 80px;
+    background-color: white;
+}
+.italia3{
+    width:40px;
+    height: 80px;
+    background-color: red;
+}
+.polonia{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.polonia1{
+    height: 80px;
+    width: 128px;
+    background: linear-gradient(#fff 50%, #de0c39 0)
+}
+.alemanha{
+    height: 80px;
+    width: 128px;
+}
+.alemanha1{
+    height: 80px;
+    width: 128px;
+    background: linear-gradient(#000 33%, #de0000 33%, #de0000 67%, #ffcf00 0);
+}
+.belgica1{
+    background: linear-gradient( to right, black 33%,#fddb21 33%,#fddb21 67%,#ef303f 0);
+    height: 80px;
+    width: 128px;
+}
+.united_kingdom {
+    border: 2px solid black;
+  height: 80px;
+  width: 128px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  position: relative;
+  background: #ffffff;
+}
+  
+.united_kingdom__plus {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 10px white) drop-shadow(10px 0 white)
+    drop-shadow(-10px 0 white) drop-shadow(0 -10px white);
+}
+
+.united_kingdom__plus .plus {
+  width: 100%;
+  height: 100%;
+  background-color: #e51837;
+  clip-path: polygon(
+    0% 43%,
+    45% 43%,
+    45% 0%,
+    55% 0%,
+    55% 43%,
+    100% 43%,
+    100% 58%,
+    55% 58%,
+    55% 100%,
+    45% 100%,
+    45% 58%,
+    0% 58%
+  );
+}
+
+.united_kingdom__x {
+  position: absolute;
+  inset: 0;
+}
+.suecia {
+  background: linear-gradient(
+    #006aa8 32px,
+    #fdcd00 32px,
+    #fdcd00 48px,
+    #006aa8 0
+  );
+}
+
+.suecia::before {
+  position: absolute;
+  content: "";
+  left: 38px;
+
+  width: 16px;
+  height: 100%;
+  background-color: #fdcd00;
+}
+.banderasueca {
+  position: relative;
+  height: 80px;
+  width: 128px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.brazil {
+  background-color: #009c37;
+  display: grid;
+  place-items: center;
+}
+
+.brazil__diamond {
+  background-color: #fde000;
+  width: 80%;
+  height: 70%;
+  clip-path: polygon(51% 0%, 100% 50%, 51% 100%, 0% 50%);
+  /* transform: skew(-10deg, -10deg) rotate(45deg); */
+}
+
+.brazil__logo {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    justify-content: center;
+    border-radius: 1000px;
+}

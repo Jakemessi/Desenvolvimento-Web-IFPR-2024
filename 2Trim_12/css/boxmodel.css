@@ -1,0 +1,120 @@
+/* Este arquivo tem por objetivo trabalhar com dimensões do conteúdo (padding, margin e border) e posicionamento do conteúdo */
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    /* Versão completa
+    margin-top: 60px;
+    margin-right: 60px;
+    margin-bottom: 60px;
+    margin-left: 60px; */
+    margin: 60px 60px 60px 60px ;
+/*  Versão simplificada   
+    border-style: solid;
+    border-width: 2px;
+    border-color: gray; */
+
+    border:2px solid gray;
+   /*  
+   padding-top:  20px;
+    padding-right:  20px;
+    padding-bottom:  20px;
+    padding-left: 20px; */
+    padding: 20px;
+}
+img {
+    position: fixed;
+    width: 70%;
+    height: 10%;
+}
+.majima{
+    text-align: left;
+}
+h1{
+    background-color: darkblue;
+    color: white;
+    width: 400px;
+    height: 50pX;
+    margin: 50px;
+    padding: 20px 50px;
+    border: 2px dashed red;
+}
+p{
+    border: 1px solid blue;
+    width: 800px;
+}
+span{
+    background-color: yellowgreen;
+    color: darkblue;
+}
+.box1{
+    background-color: yellow;
+    color: blue;
+    width: 400px;
+    height: 50px;
+    position: static;
+    top: 200px;
+}
+.box2{
+    background-color: green;
+    color: red;
+    width: 400px;
+    height: 50px;
+    position: relative;
+    left: 450px;
+    bottom: 50px;
+}
+.box3{
+    background-color: orange;
+    color: yellow;
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.box4{
+    background-color: darkblue;
+    color: yellow;
+    width: 400px;
+    height: 50px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.box5{
+    background-color: purple;
+    color: yellow;
+    width: 400px;
+    height: 50px;
+    position: sticky;
+    left: 150px;
+    top: 0px;
+    bottom: 200px;
+}
+
+.layer1{
+    background-color: cadetblue;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    bottom: 0px;
+    left: 25px;
+    z-index: 2;
+}
+.layer2{
+    background-color: lime;
+    width: 80px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+    z-index: 1;
+}
