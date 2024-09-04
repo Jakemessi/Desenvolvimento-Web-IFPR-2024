@@ -1,0 +1,50 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,#0b1726,#1f3f66);
+    width: 90%; /* O corpo de texto ocupa 90% da área visível do navegador */
+    margin:0 auto;/*  divide o conteúdo de forma proporcional no navegador */
+}
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+#logo img{
+    width: 45%;
+    padding-top: 50px;
+}
+.navegacao{
+    overflow: hidden;
+}
+.navegacao a{
+    color: rgb(173, 173, 173);
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+}
+.navegacao a:hover{/* faz alterações quando o mouse passa por cima do conteúdo */
+    color: #e32936;
+    background-color: black;
+}
+.principal{ /* Permite que o conteúdo fique "flexível" para manipulação ocupando uma linha disposto em colunas */
+    display: flex;
+    flex-direction: row;
+}
+.conteudo{
+    float: left;
+    margin: 15px 2px 25px 2px;
+    background-color: gainsboro;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #08101a98;
+}
+.rodape{
+    color: darkgrey;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}

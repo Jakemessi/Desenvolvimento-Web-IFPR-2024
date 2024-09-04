@@ -1,0 +1,89 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right,#0b1726,#1f3f66);
+    width: 90%; /* O corpo de texto ocupa 90% da área visível do navegador */
+    margin:0 auto;/*  divide o conteúdo de forma proporcional no navegador */
+}
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #161616;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+#logo img{
+    width: 45%;
+    padding-top: 50px;
+}
+.navegacao{
+    overflow: hidden;
+}
+.navegacao a{
+    color: rgb(173, 173, 173);
+    float: right;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: right;
+}
+.navegacao a:hover, .menususpenso:hover .menususbotao{/* faz alterações quando o mouse passa por cima do conteúdo */
+    color: #e32936;
+    background-color: black;
+}
+.principal{ /* Permite que o conteúdo fique "flexível" para manipulação ocupando uma linha disposto em colunas */
+    display: flex;
+    flex-direction: row;
+}
+.conteudo{
+    float: left;
+    margin: 15px 2px 25px 2px;
+    background-color: gainsboro;
+    padding: 15px;
+    text-align: justify;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #08101a98;
+}
+.rodape{
+    color: darkgrey;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px;
+}
+
+.menususpenso {
+  float: right; /* Joga a tag pro lado direito de seu divisor */
+  overflow: visible; /* Esconde a barra de rolagem */
+}
+
+.menususpenso .menususbotao {
+  font-size: 16px;  /* Tamanho da fonte */
+  border: none; /* Tira a borda */
+  outline: none; /* Tira o sublinhado de seleção */
+  color: rgb(173, 173, 173); /* Altera a cor do botão */
+  background-color: inherit; /* Pega a mesma cor de Background de sua seção */
+  font-family: inherit; /* Pega a mesma fonte de sua seção */
+  padding: 10px;
+}
+
+.menususpenso-conteudo {
+  display: none; /* Esconde os itens do menu suspenso para uma possível sumonação */
+  position: absolute; /* Faz a lista apar */
+  background-color: #f9f9f9; /* Muda a cor de fundo dos itens do menu suspenso */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Deixa um efeito de sombreado embaixo do menu suspenso */
+  width: 200px; /* Define a largura do menu suspenso assim definindo a larguma máxima dos itens */
+  height: 240px; /* Define a altura do menu suspenso assim definindo a quantidade máxima de itens a serem expostos na tela */
+  overflow: scroll; /* Faz com que seja possível compactar a lista através do uso de um scroll */
+}
+
+.menususpenso-conteudo a {
+  color: black;
+  padding: 12px 16px; /* Ajusta o espaçamento entre os itens do menu suspenso no eixo y e x respectivamente*/
+  text-align: left; /* Deixa o texto alinhado à esquerda */
+}
+
+.menususpenso-conteudo a:hover {
+  background-color: #ddd; /* Coloca efeito cizento no fundo dos itens selecionados */
+}
+
+.menususpenso:hover .menususpenso-conteudo {
+  display: grid; /* Faz aparecer o menu suspenso que estava previamente escondido */
+}
