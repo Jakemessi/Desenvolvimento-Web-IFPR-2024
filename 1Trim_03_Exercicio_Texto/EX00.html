@@ -3,11 +3,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios usando Tags</title>
+    <link rel="stylesheet" href="../2Trim_15_TrilhaDeAprendizado/css/estilo01.css">
 <head>
 </head>
-<body>
-    
-    <h1>HTML</h1>
+<body class="cuerpo">
+    <header> <!-- Tag semantica que define o cabeçalho -->
+        <div id="logo"> <!-- Logotipo do site -->
+            <picture>
+                <img src="https://cdn.discordapp.com/attachments/321283440618110978/1281051217220468766/image.png?ex=66da4f6a&is=66d8fdea&hm=a828b55dc3bf24c0a5d03bd1f77a4851058b4a43973c163a06d187c47d89c43e&" alt="Logotipo">
+            </picture>
+        </div> <!-- Fim do Logotipo do Site -->
+        <nav> <!-- Barra de Navegação -->
+            <div class="navegacao"> <!-- Cria o Menu de Navegação -->
+                <a href="#">Sobre</a>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao">Conteúdo</button> <!-- Atribui função de botão ao texto -->
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                        <a href="../1Trim_01BasicoHTML/EX01.html">1º Básico de HTML</a>
+                        <a href="../1Trim_03_Exercicio_Texto/EX00.html">2º Tags de Texto</a>
+                        <a href="#">3º Exercício de Tags txt</a>
+                        <a href="#">4º Tags de Formatação</a>
+                        <a href="#">5º Tags de Imagem</a>
+                        <a href="#">6º Revisão das aulas anteriores</a>
+                        <a href="#">7º Hyperlinks</a>
+                        <a href="#">8º Tabelas</a>
+                        <a href="#">9º Multimídias</a>
+                        <a href="#">10º Site em Tabelas</a>
+                        <a href="#">11º Introdução ao CSS</a>
+                        <a href="#">12º BoxModel</a>
+                        <a href="#">13º Seletores</a>
+                        <a href="#">14º Layouts com CSS</a>
+                        <a href="#">15º Display Flexbox e Grid</a>
+                      </div>
+                </div>
+                <a href="#">O Projeto</a>
+            </div> <!-- Fim Menu Navegação -->
+        </nav>
+    </header> <!-- Fim do cabeçalho -->
+    <div class="dividor">
+        <h1>HTML</h1>
     <p>É uma Linguagem de Marcação de Hipertexto baseada em tags criada na década de 1990 por Tim Berners-Lee para publicação de conteúdo em hipertexto, tais como, texto, imagem, áudio e vídeo, e que podem ser vinculados através de hyperlinks.<br></p>
     
     <h1>TAGS</h1>
@@ -42,5 +76,112 @@
                 <p><font color="black" face="arial" size="16"> This text is big</font></p>
                 <p><font color="black" face="arial" size="3">This is some smaller text</font></p>
                 <p><font color="blue" face="arial" size="16">fonte em azul</font></p>
+        
+        
+    <font face="arial">
+        <h1>Tag del</h1>
+            <p><del>Jamanta é uma palavra que começa com a silaba <del>be</del>ja</del></p>
+            <p>A tag del serve para riscar uma sequencia de palavras <del>cavalo de ponta cabeça</del></p>
+            <p>Ou para deletar uma parte... <del>Como roubar um banco</del></p>
+            <p>"Se ta falando daquele chocolate que <del>roubei</del> emprestei?</p>
+        <hr>
+        <h1>Tag ins</h1>
+            <p>A tag ins basicamente sublinha o <del>contexto</del> <ins>texto</ins><br>Usada para <ins>marcar textos adicionados após uma revisão/atualização</ins><br>Ou seja, útil para <ins>changelog/notas de atualização</ins></p>
+        <hr>   
+        <h1>Tag sub</h1>
+            <p>Essa tag <sub>sub</sub> serve para deixar letras no meio da linha<br> Útil para escrever fórmulas químicas como H<sub>2</sub>O</p>
+            <p><sub>Olha o terremoto</sub> capa</p>
+            <p>C<sub>17</sub>H<sub>21</sub>NO<sub>4</sub>C é a fórmula da benzoilmetilecgonina</p>
+        <hr>
+        <h1>Tag sup</h1>
+            <p>A tag <sup>sup</sup> serve para colocar letras acima de seu nível, como se fossem expoentes</p>
+            <p>5<sup>2</sup> equivale a 25</p>
+            <p>O 1<sup><ins>o</ins></sup> cavalo a passar a linha de chegada foi do vaqueiro Geovane</p>
+            <p>O 39<sup><ins>o</ins></sup> Presidente do Brasil é o Luiz Inácio Lula da Silva</p>
+        <hr>
+        <h1>Tag blockquote</h1>
+            <p>A tag blockquote é usado para citar referências de outra fonte<blockquote>blockquote</blockquote></p>
+            <p><blockquote cite="https://www.w3schools.com/tags/tag_blockquote.asp">
+                Geralmente usadas com o modificador cite para citar o link da fonte
+            </blockquote></p>
+            <p><blockquote>Desligue o monitor! <sub>-Francis 2021</sub></blockquote></p>
+        <hr>
+        <h1>Tag q</h1>
+            <p><q>A tag q é usada para citar referências breves (pequenas)</q></p>
+            <p><q>Tem uma cobra na minha boina</q></p>
+            <p><q>Um cavalo sem um rabo, um mero Jamanta</q></p>
+            <p><q>Me vê uma torta de frutas James!</q></p>
+        <hr>
+        <h1>Tag abbr</h1>
+            <p>A tag <abbr title="Abbr">abbr</abbr> é usada para destacar abreviações e acrônimos</p>
+            <p><abbr title="Cavalo de Potência">CV</abbr> unidade usada na medição dos cavalos de potência</p>
+            <p><abbr title="Fim de Semana">FDS</abbr> é usado geralmente para expressar que não liga, mas pode ser acronimo de "fim de semana"</p>
+            <p><abbr title="Centimetros">CM</abbr> é usado para medir objetos pequenos</p>
+        <hr>
+        <h1>Tag address</h1>
+            <p>A tag <address>address</address> é usada para apresentar informações do autor ou dono de tal documento</p>
+            <p><address>
+                Instituto Federal do Paraná Campus Irati
+                Endereço: Rua Pedro Koppe, 100 – Vila Matilde – 2104 0200<br>Número: (42) 2104-0203
+            </address></p>
+            <p><address>
+                Hands On Childrens Museum
+                Endereço: 8580 Beach Blvd, Jacksonville, FL 32216<br>Número: +1 904-642-2688
+            </address></p>
+            <p><address>
+                Colégio Pim Pam Pum
+                Endereço: Avenida Governador Silva Carvalho, Lobito, Benguela<br>Número: +244 940 769 586
+            </address></p>
+        <hr>
+        <h1>Tag cite</h1>
+            <p>A tag <cite>cite</cite> é usada para declarar um título</p>
+            <p><cite>Assassin's Creed: Forsaken</cite> por Oliver Bowden</p>
+            <p><cite>Crusader art in the Holy Land : from the Third Crusade to the fall of Acre, 1187-1291</cite> por Jaroslav Folda</p>
+            <p><cite>Wessex Tales</cite> por Thomas Hardy</p>
+        <hr>
+        <h1>Tag bdo</h1>
+            <p>A tag bdo altera a direção do texto</p>
+            <p><bdo dir="rtl">O cavalo deu ré</bdo></p>
+            <p><bdo dir="ltr">Decidiu ir em frente</bdo></p>
+            <p><bdo dir="rtl">Mas continuou indo de ré</bdo></p>
+         <hr>
+        <h1>Tag code</h1>
+            <p>A tag code é usada para demonstrar um código</p>
+            <p>A tag <code>code</code> é usada para demonstrar um codigo</p>
+            <p>A tag <code>cite</code> é usada para declarar um título</p>
+            <p>A tag <code>address</code> é usada para apresentar informações do autor ou dono de tal documento</p>
+         <hr>
+        <h1>Tag pre</h1>
+            <p>A tag pre permite que seja preservado as quebras de linha e outros atributos colo largura</p>
+            <pre>
+                Cavalinho Cavalinho
+                Cavalino de Jesus
+                Não sei porque não andas
+                Sem que eu te obrigue
+            </pre>
+            <pre>
+                No baile nóis é mídia
+                No baile os menor marola
+                Aperta o balão
+                Acende, puxa, prende e solta
+            </pre>
+            <pre>
+                Cabelo da Tony Country pra mostrar que é de vilão
+                Lado mal e lado bem, nós é bom mas não é bombom
+                O toque da horneteira entre becos e vielas
+                Meia preta e meia branca que nós joga na canela
+                Os irmão tá de AK em cima da CB 1000
+                Recalcado cresce o olho, vai pra puta que pariu
+                Vai
+            </pre>
+        <hr>
+        <h1>Tag kbd</h1>
+        <p>A tag kbd é usada para indicar um comando de teclado</p>
+        <p><kbd>Alt</kbd> + <kbd>F4</kbd> fecha o programa focado</p>
+        <p><kbd>Alt</kbd> + <kbd>TAB</kbd> altera para um outro programa aberto</p>
+        <p><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd> abre o gerenciador de tarefas </p>
+        <hr>
+    </font>
+    </div>
 </body>
 </html>

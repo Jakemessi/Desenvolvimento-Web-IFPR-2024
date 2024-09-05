@@ -8,6 +8,7 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #161616;
     margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 5px;
 }
 #logo img{
@@ -86,4 +87,12 @@ header{
 
 .menususpenso:hover .menususpenso-conteudo {
   display: grid; /* Faz aparecer o menu suspenso que estava previamente escondido */
+}
+.dividor{
+  background-color: white; 
+  border-radius: 5px;
+  padding: 10px;
+}
+.cuerpo{
+  display: flexbox;
 }
