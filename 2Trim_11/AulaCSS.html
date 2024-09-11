@@ -7,7 +7,37 @@
     <title>CSS</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="cuerpo">
+    <header> <!-- Tag semantica que define o cabeçalho -->
+        <div id="logo"> <!-- Logotipo do site -->
+            <picture>
+                <img src="img/logo.png" alt="Logotipo">
+            </picture>
+        </div> <!-- Fim do Logotipo do Site -->
+        <nav> <!-- Barra de Navegação -->
+            <div class="navegacao"> <!-- Cria o Menu de Navegação -->
+                <a href="#">Sobre</a>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao">Conteúdo</button> <!-- Atribui função de botão ao texto -->
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                        <a href="../1Trim_05Tags_Imagem/RDE04/Ex01.html">1º Definição de Html</a>
+                        <a href="../1Trim_01BasicoHTML/EX01.html">2º Básico de HTML</a>
+                        <a href="../1Trim_03_Exercicio_Texto/EX00.html">3º Tags de Formatação de Texto</a>
+                        <a href="../1Trim_06_Exercicio/EX00.html">4º Revisão das aulas anteriores</a>
+                        <a href="../1Trim_07_HyperLinks/Ex00.html">5º Hyperlinks</a>
+                        <a href="../1Trim_08_Tabelas/EX00.html">6º Tabelas</a>
+                        <a href="../2Trim_09_Multimidias/midias/index.html">7º Multimídias</a>
+                        <a target="_blank" href="../2Trim_09_Site/index.html">8º Site Original (Link Externo)</a>
+                        <a href="../2Trim_10/index.html">9º Site em Tabelas</a>
+                        <a href="AulaCSS.html">10º Introdução ao CSS</a>
+                        <a href="../2Trim_15_DisplayFlexGrid/index.html">11º Display: Flex e Grid</a>
+                      </div>
+                </div>
+                <a href="#">O Projeto</a>
+            </div> <!-- Fim Menu Navegação -->
+        </nav>
+    </header> <!-- Fim do cabeçalho -->
+    <div class="dividor" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; background-color: cornflowerblue; text-align: justify; text-shadow:20px;">
     <h1>Cascading Style Sheets</h1>
     
     <h2>Definição</h2>
@@ -21,20 +51,21 @@
         </ul>
 
     <h2>Formas de utilização</h2>
-    <h3>Inline</h3>
+    <a href="AulaCS_Inline.html"><h3>Inline</h3></a>
     Os códigos CSS são definidos dentro de uma tag HTML.
     Afetam somente a tag em que foi definida.
 
-    <h3>Incorporado ou Internal</h3>
+    <a href="AulaCSS_incorporado.html"><h3>Incorporado ou Internal</h3></a>
     <p>
         Os código CSS são definidos no cabeçalho, dentro da tag head
         Afetam somente o documento em que foi definido.
     </p>
 
-    <h3>Externo ou External</h3>
+    <a href="AulaCSS_Externo.html"><h3>Externo ou External</h3></a>
     <p>
         Os códigos CSS são definidos em um arquivo externo.
         Afetam todos os documentos que estão linkados ao CSS.
     </p>
+    </div>
 </body>
 </html>

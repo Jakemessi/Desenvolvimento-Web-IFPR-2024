@@ -2,59 +2,85 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    [favicon]
-    <title>HTML - Definições </title>
+    <title>HTML - Definições</title>
+    <link rel="stylesheet" href="../../2Trim_15_TrilhaDeAprendizado/css/estilo01.css">
 </head>
+<body class="cuerpo">
+    <header> <!-- Tag semantica que define o cabeçalho -->
+        <div id="logo"> <!-- Logotipo do site -->
+            <picture>
+                <img src="../../2Trim_15_TrilhaDeAprendizado/img/logo.png" alt="Logotipo">
+            </picture>
+        </div> <!-- Fim do Logotipo do Site -->
+        <nav> <!-- Barra de Navegação -->
+            <div class="navegacao"> <!-- Cria o Menu de Navegação -->
+                <a href="#">Sobre</a>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao">Conteúdo</button> <!-- Atribui função de botão ao texto -->
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                        <a href="Ex01.html">1º Definição de Html</a>
+                        <a href="../../1Trim_01BasicoHTML/EX01.html">2º Básico de HTML</a>
+                        <a href="../../1Trim_03_Exercicio_Texto/EX00.html">3º Tags de Formatação de Texto</a>
+                        <a href="../../1Trim_06_Exercicio/EX00.html">4º Revisão das aulas anteriores</a>
+                        <a href="../../1Trim_07_HyperLinks/Ex00.html">5º Hyperlinks</a>
+                        <a href="../../1Trim_08_Tabelas/EX00.html">6º Tabelas</a>
+                        <a href="../../2Trim_09_Multimidias/midias/index.html">7º Multimídias</a>
+                        <a target="_blank" href="../../2Trim_09_Site/index.html">8º Site Original (Link Externo)</a>
+                        <a href="../../2Trim_10/index.html">9º Site em Tabelas</a>
+                        <a href="../../2Trim_11/AulaCSS.html">10º Introdução ao CSS</a>
+                        <a href="../../2Trim_15_DisplayFlexGrid/index.html">11º Display: Flex e Grid</a>
+                      </div>
+                </div>
+                <a href="#">O Projeto</a>
+            </div> <!-- Fim Menu Navegação -->
+        </nav>
+    </header> <!-- Fim do cabeçalho -->
+    <div class="dividor">
+        h1>HTML</h1>
+           <p>É uma <b> Linguagem de Marcação de Hipertexto </b> baseada em tags criada na década de 1990 por Tim Berners-Lee.</p>
+           <img src="img/TimBernersLee.jpg" alt="Inventor do WWW">
+           <p>A  HTML  é utilizada para publicação de conteúdo em hipertexto, tais como: [lista][negrito] texto,imagem,áudio,vídeo.
+           <br>Estes elementos podem ser [italico]vinculados através de [enfase]hyperlinks.</p>
+           <img src="img/html.jpg" alt="cavalo">
 
-<body>
-    <h1>HTML</h1>
-        <p>É uma <b> Linguagem de Marcação de Hipertexto </b> baseada em tags criada na década de 1990 por Tim Berners-Lee.</p>
-        <img src="img/TimBernersLee.jpg" alt="Inventor do WWW">
-        <p>A  HTML  é utilizada para publicação de conteúdo em hipertexto, tais como: [lista][negrito] texto,imagem,áudio,vídeo.
-        <br>Estes elementos podem ser [italico]vinculados através de [enfase]hyperlinks.</p>
-        <img src="img/html.jpg" alt="cavalo">
+                   
+           <p>A invenção do www foi fundamental ([enfase]World Wide, Web), pois trata-se de um  sistema de documentos em hipermídia que são interligados e executados na Internet. [fonte pequena] fonte: Wikipedia</p>
+           <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/WWW_logo_by_Robert_Cailliau.svg" alt="Wikimedia" width="13<%">
 
-                
-        <p>A invenção do www foi fundamental ([enfase]World Wide, Web), pois trata-se de um  sistema de documentos em hipermídia que são interligados e executados na Internet. [fonte pequena] fonte: Wikipedia</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/WWW_logo_by_Robert_Cailliau.svg" alt="Wikimedia" width="13<%">
-
-        <p>Tim Berners-Lee teve grande contribuição para a evolução da internet, através da criação das seguintes tecnologias:</p>
-        <ul>
-            <li>WWW</li>
-            <li>HTML</li>
-            <li>HTTP</li>
-        </ul>
-        <h2>Evolução da Internet</h2>
-            <ol>
-                <li>1990 - Criação do HTML</li>
-                <li>1995 - Versão 2.0</li>
-                <li>1997 - Versão 3.2</li>
-                <li>1999 - Versão 4.01</li>
-                <li>2014 - Versão HTML 5</li>
-            </ol>
-        
-        <h2> Evolução da Internet em detalhes</h2>
-           [lista detalhada]
-              1990 - Criação do HTML
-              Invenção da Linguagem HTML
-              1995 - Versão 2.0
-              Formalizar todas as características HTML que já eram utilizadas
-              1997 - Versão 3.2
-              Permite a criação de tabelas, applets e texto flutuante ao redor de imagens.
-              1999 - Versão 4.01
-              Suporte para opções multimídias, folha de estilos e melhorar as práticas de marcação
-              2014 - Versão HTML 5
-              Aperfeiçoar a experiência da World Wide Web para os desenvolvedores e usuários finais
-          
+           <p>Tim Berners-Lee teve grande contribuição para a evolução da internet, através da criação das seguintes tecnologias:</p>
+           <ul>
+               <li>WWW</li>
+               <li>HTML</li>
+               <li>HTTP</li>
+           </ul>
+           <h2>Evolução da Internet</h2>
+               <ol>
+                   <li>1990 - Criação do HTML</li>
+                   <li>1995 - Versão 2.0</li>
+                   <li>1997 - Versão 3.2</li>
+                   <li>1999 - Versão 4.01</li>
+                   <li>2014 - Versão HTML 5</li>
+               </ol>
            
-         <h2>TAGS</h2>
-            <p>As <big>tags</big> definem ao navegador a marcação de conteúdo.<br> As tags tem funcionalidades específicas. Sem o uso de tags o navegador exibe um texto plano.</p>
-            <p>As tags podem possuir atributos, ou seja, são parâmetros que definem algum tipo de informação extra ao <font face="verdana" color="blue" size="14">navegador.</font></p>
-
-           
-
-
+           <h2> Evolução da Internet em detalhes</h2>
+              [lista detalhada]
+                 1990 - Criação do HTML
+                 Invenção da Linguagem HTML
+                 1995 - Versão 2.0
+                 Formalizar todas as características HTML que já eram utilizadas
+                 1997 - Versão 3.2
+                 Permite a criação de tabelas, applets e texto flutuante ao redor de imagens.
+                 1999 - Versão 4.01
+                 Suporte para opções multimídias, folha de estilos e melhorar as práticas de marcação
+                 2014 - Versão HTML 5
+                 Aperfeiçoar a experiência da World Wide Web para os desenvolvedores e usuários finais
+             
+              
+            <h2>TAGS</h2>
+               <p>As <big>tags</big> definem ao navegador a marcação de conteúdo.<br> As tags tem funcionalidades específicas. Sem o uso de tags o navegador exibe um texto plano.</p>
+               <p>As tags podem possuir atributos, ou seja, são parâmetros que definem algum tipo de informação extra ao <font face="verdana" color="blue" size="14">navegador.</font></p>
+            
+    </div>
 </body>
 </html>

@@ -1,0 +1,68 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    color: #777;
+}
+.parallax1{
+    position: relative;
+    background-image: url(../img/img_parallax.jpg); /* Coloca imagem de fundo */
+    height: 100%; /* Faz com que utilize a imagem em 100% de sua resolução */
+    opacity: 0.25; /* Deixa a imagem mais transparente */
+    background-attachment: fixed; /* Fixa a imagem no fundo da tela enquanto a página é scrolada*/
+    background-position: center; /* Cetraliza a imagem no centro da tela indepedente do dimensionamento da tela */
+    background-repeat: no-repeat; /* Impede que a imagem se repita/seja clonada para preencher a tela caso não tenha tamanho suficiente */
+    background-size: cover; /* Redimensiona a imagem de acordo com a tela do dispositivo mantendo a proporção */
+}
+.caption{
+    /* Altera a posição do texto */
+    position: absolute;
+    left:0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border{
+    /* Altera características do texto: cor do fundo, cor do texto, espaçamento da borda. tamanho da fonte e espaçamento entre caracteres */
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+.parallax2{
+    position: relative;
+    background-image: url(../img/img_parallax2.jpg);
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed; /* Fixa a imagem no fundo da tela enquanto a página é scrolada*/
+    background-position: center; /* Cetraliza a imagem no centro da tela indepedente do dimensionamento da tela */
+    background-repeat: no-repeat; /* Impede que a imagem se repita/seja clonada para preencher a tela caso não tenha tamanho suficiente */
+    background-size: cover; /* Redimensiona a imagem de acordo com a tela do dispositivo mantendo a proporção */
+}
+.parallax3{
+    position: relative;
+    background-image: url(../img/img_parallax3.jpg);
+    height: 100%;
+    opacity: 0.65;
+    background-attachment: fixed; /* Fixa a imagem no fundo da tela enquanto a página é scrolada*/
+    background-position: center; /* Cetraliza a imagem no centro da tela indepedente do dimensionamento da tela */
+    background-repeat: no-repeat; /* Impede que a imagem se repita/seja clonada para preencher a tela caso não tenha tamanho suficiente */
+    background-size: cover; /* Redimensiona a imagem de acordo com a tela do dispositivo mantendo a proporção */
+}
+.box1{
+    background-color: white;
+    text-align: justify;
+    padding: 50px 80px;
+}
+.box1 h3{
+    text-align: center;
+}
+.box2{
+    color: white;
+    background-color: #5f5454;
+    text-align: center;
+    padding:50px 80px;
+}
+/* Crio o seu parallax até o fim desta aula */

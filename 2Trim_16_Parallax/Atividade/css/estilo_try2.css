@@ -1,0 +1,87 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+    background-color: #282828;
+}
+.parallax1{
+    background-image: url(https://www.thesun.co.uk/wp-content/uploads/2022/07/Yakuza-like-a-dragon-splash.jpg?strip=all&quality=100&w=1920&h=1080&crop=1);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.3;
+}
+.parallax1 .caption{
+    /* Altera a posição do texto */
+    position: absolute;
+    left:0;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-image: url(https://upload.wikimedia.org/wikipedia/pt/0/0b/Yakuza_franquia_logo.png);
+    opacity: 1;
+}
+.corpo{
+    height: fit-content;
+}
+.box1 p{
+    padding: 10px 40px;
+    text-align: justify;
+}
+.parallax2{
+    position: relative;
+    background-image: url(https://www.dexerto.com/cdn-cgi/image/width=3840,quality=60,format=auto/https://editors.dexerto.com/wp-content/uploads/2023/11/06/MixCollage-06-Nov-2023-06-37-PM-2270.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100%;
+    opacity: 0.3;
+}
+.parallax2 .caption{
+    position: absolute;
+    left:0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    
+}
+.parallax2 .caption span.border{
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+    font-size: 25px;
+    width: fit-content;
+
+}
+.box2 p{
+    padding: 10px 40px;
+    text-align: justify;
+}
+.parallax3{
+    background-image: url(https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2024/06/Captura-de-tela-2024-06-04-152945.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.3;
+}
+.box3 p{
+    background-color: #282828;
+    padding: 20px;
+    opacity: 1;
+    
+}
+footer{
+    text-align: center;
+    position:sticky;
+    bottom: 0px;
+    background-color: #282828;
+}

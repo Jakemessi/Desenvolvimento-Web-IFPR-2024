@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display: Flex e Grid</title>
+    <link rel="stylesheet" href="../2Trim_15_TrilhaDeAprendizado/css/estilo01.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="cuerpo">
+    <header> <!-- Tag semantica que define o cabeçalho -->
+        <div id="logo"> <!-- Logotipo do site -->
+            <picture>
+                <img src="img/logo.png" alt="Logotipo">
+            </picture>
+        </div> <!-- Fim do Logotipo do Site -->
+        <nav> <!-- Barra de Navegação -->
+            <div class="navegacao"> <!-- Cria o Menu de Navegação -->
+                <a href="#">Sobre</a>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao">Conteúdo</button> <!-- Atribui função de botão ao texto -->
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                        <a href="../1Trim_05Tags_Imagem/RDE04/Ex01.html">1º Definição de Html</a>
+                        <a href="../1Trim_01BasicoHTML/EX01.html">2º Básico de HTML</a>
+                        <a href="../1Trim_03_Exercicio_Texto/EX00.html">3º Tags de Formatação de Texto</a>
+                        <a href="../1Trim_06_Exercicio/EX00.html">4º Revisão das aulas anteriores</a>
+                        <a href="../1Trim_07_HyperLinks/Ex00.html">5º Hyperlinks</a>
+                        <a href="../1Trim_08_Tabelas/EX00.html">6º Tabelas</a>
+                        <a href="../2Trim_09_Multimidias/midias/index.html">7º Multimídias</a>
+                        <a target="_blank" href="../2Trim_09_Site/index.html">8º Site Original (Link Externo)</a>
+                        <a href="../2Trim_10/index.html">9º Site em Tabelas</a>
+                        <a href="../2Trim_11/AulaCSS.html">10º Introdução ao CSS</a>
+                        <a href="index.html">11º Display: Flex e Grid</a>
+                      </div>
+                </div>
+                <a href="#">O Projeto</a>
+            </div> <!-- Fim Menu Navegação -->
+        </nav>
+    </header> <!-- Fim do cabeçalho -->
+    <div class="dividor" style="padding-left: 10px; padding-right: 10px;">
+        <h1 style="text-align: center;">Display</h1>
+            <p style="text-align: center;">
+                Display é uma propriedade do CSS que permite ao desenvolvedor, manipular a visualização da página que o usuário irá usar.br
+                <br>
+                Geralmente é utilizado para poder se ter uma organização limpa e ordenada dos objetos (tags como img, h1, p, div e etc)
+            </p>
+            <h2 style="text-align: center;">Flex</h2>
+                <p style="text-align: left;">
+                    O valor "Flex" para a propriedade Display, permite com que os objetos sejam organizados de forma que todos tenham o mesmo tamanho dentro de suas camadas
+                    <br>
+                    Exemplo:
+                </p>
+                <div class="salamalenco">
+                    <img src="https://64.media.tumblr.com/5f950dabd7073487acb1639e5531efb6/0af8d1a159a64469-00/s400x600/42a3a412672f683947518bec00a551d95c0db093.gifv" alt="">
+                    <img src="https://secure.static.tumblr.com/0132382d562959a45e8907b36083521f/sqsrgpe/d7aodlquk/tumblr_static_tumblr_static_3x10vm4f9jc4kg4g8kgkgo08o_640.gif" alt="">
+                    <img src="https://cahsseffect.org/wp-content/uploads/2020/02/tiger-1.gif" alt="">
+                </div>
+                
+                <p>
+                    Porém como podemos ver, a propriedade Flex tem tedência a ultrapassar os limites predefinidos para consertar isso basta usar o valor flexbox
+                </p>
+                <h3>FlexBox</h3>
+                    <p>
+                        O valor "Flexbox" para a propriedade Display, permite com que os objetos sejam organizados de forma que todos tenham o mesmo tamanho dentro de suas camadas de forma a respeitar o tamanho da mesma
+                        <br>
+                        Exemplo:
+                    </p>
+                    <div class="salamalenco2">
+                        <img src="https://64.media.tumblr.com/5f950dabd7073487acb1639e5531efb6/0af8d1a159a64469-00/s400x600/42a3a412672f683947518bec00a551d95c0db093.gifv" alt="">
+                        <img src="https://secure.static.tumblr.com/0132382d562959a45e8907b36083521f/sqsrgpe/d7aodlquk/tumblr_static_tumblr_static_3x10vm4f9jc4kg4g8kgkgo08o_640.gif" alt="">
+                        <img src="https://cahsseffect.org/wp-content/uploads/2020/02/tiger-1.gif" alt="">
+                    </div>
+            <h2 style="text-align: center;">Grid</h2>
+                <p style="text-align: left;">
+                    O valor "Grid" para a propriedade Display, permite com que os objetos sejam organizados de forma que todos tenham o mesmo tamanho dentro de suas camadas
+                    <br>
+                    Exemplo:
+                </p>
+                <div class="salamalenco3">
+                    <img src="https://64.media.tumblr.com/5f950dabd7073487acb1639e5531efb6/0af8d1a159a64469-00/s400x600/42a3a412672f683947518bec00a551d95c0db093.gifv" alt="">
+                    <img src="https://secure.static.tumblr.com/0132382d562959a45e8907b36083521f/sqsrgpe/d7aodlquk/tumblr_static_tumblr_static_3x10vm4f9jc4kg4g8kgkgo08o_640.gif" alt="">
+                    <img src="https://cahsseffect.org/wp-content/uploads/2020/02/tiger-1.gif" alt="">
+                </div>
+    </div>
+</body>
+</html>

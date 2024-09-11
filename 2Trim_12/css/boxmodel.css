@@ -26,8 +26,11 @@ img {
     width: 70%;
     height: 10%;
 }
-.majima{
+.majima, .majima img{
+    width: 70%;
+    height: 10%;
     text-align: left;
+    position: sticky;
 }
 h1{
     background-color: darkblue;

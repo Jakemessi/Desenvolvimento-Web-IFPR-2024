@@ -4,48 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multimídias</title>
+    <link rel="stylesheet" href="../../2Trim_15_TrilhaDeAprendizado/css/estilo01.css">
 </head>
-<body>
-    <h1>Multimídias</h1>
-        <p>
-            São diversos tipos de mídias, tais como:
-            <ul>
-                <li>Vídeo</li>
-                <li>Áudio</li>
-                <li>Imagem</li>
-                <li>Sites</li>
-                <li>Dentre outros</li>
-            </ul>
-        </p>
-        <h2>Incorporando Multimídias a um site</h2>
-            <h3>Tag iframe</h3>
-                <p>Com essa tag é possível colocar sites, vídeos e áudios.</p>
-                <h4>Incorporar Sites</h4>
-                    <iframe src="https://irati.ifpr.edu.br" frameborder="1" width="100%" height="400px"></iframe>
-                <h4>Incorporar Áudio</h4>
-                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1242868615&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rick-astley-official" title="Rick Astley" target="_blank" style="color: #cccccc; text-decoration: none;">Rick Astley</a> · <a href="https://soundcloud.com/rick-astley-official/never-gonna-give-you-up-4" title="Never Gonna Give You Up" target="_blank" style="color: #cccccc; text-decoration: none;">Never Gonna Give You Up</a></div>
-                <h4>Incorporar Vídeo</h4>
-                <iframe width="1013" height="570" src="https://www.youtube.com/embed/eY52Zsg-KVI" allow="autoplay" title="No need to be upset 10 HOURS LONG!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3>Tag vídeo</h3>
-                <video poster="video/Bike.jpg" controls width="100%">
-                    <source src="video/_Bike.mp4" type="video/mp4">
-                    <source src="video/_Bike.ogv" type="video/ogv">
-                    <source src="video/_Bike.webm" type="video/webm">
-                </video>
-            <h3>Incorporar audio</h3>
-            <audio preload="metadata" controls >
-                <source src="audio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
-                <source src="audio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
-                <source src="audio/Hey Sailor - Letter Box.wav" type="audio/wav">
-            </audio>
-            <h3>Tag picture</h3>
+<body class="cuerpo">
+    <header> <!-- Tag semantica que define o cabeçalho -->
+        <div id="logo"> <!-- Logotipo do site -->
             <picture>
-                <source media="(max-width:500px )" srcset="img/bike_110.jpg">
-                <source media="(max-width:700px )" srcset="img/bike_320.jpg">
-                <source media="(max-width:900px )" srcset="img/bike_640.jpg">
-                <img src="img/bike_full.jpg" alt="">
+                <img src="../../2Trim_15_TrilhaDeAprendizado/img/logo.png" alt="Logotipo">
             </picture>
-
-
+        </div> <!-- Fim do Logotipo do Site -->
+        <nav> <!-- Barra de Navegação -->
+            <div class="navegacao"> <!-- Cria o Menu de Navegação -->
+                <a href="#">Sobre</a>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao">Conteúdo</button> <!-- Atribui função de botão ao texto -->
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                        <a href="../../1Trim_05Tags_Imagem/RDE04/Ex01.html">1º Definição de Html</a>
+                        <a href="../../1Trim_01BasicoHTML/EX01.html">2º Básico de HTML</a>
+                        <a href="../../1Trim_03_Exercicio_Texto/EX00.html">3º Tags de Formatação de Texto</a>
+                        <a href="../../1Trim_06_Exercicio/EX00.html">4º Revisão das aulas anteriores</a>
+                        <a href="../../1Trim_07_HyperLinks/Ex00.html">5º Hyperlinks</a>
+                        <a href="../../1Trim_08_Tabelas/EX00.html">6º Tabelas</a>
+                        <a href="index.html">7º Multimídias</a>
+                        <a target="_blank" href="../../2Trim_09_Site/index.html">8º Site Original (Link Externo)</a>
+                        <a href="../../2Trim_10/index.html">9º Site em Tabelas</a>
+                        <a href="../../2Trim_11/AulaCSS.html">10º Introdução ao CSS</a>
+                        <a href="../../2Trim_15_DisplayFlexGrid/index.html">11º Display: Flex e Grid</a>
+                      </div>
+                </div>
+                <a href="#">O Projeto</a>
+            </div> <!-- Fim Menu Navegação -->
+        </nav>
+    </header> <!-- Fim do cabeçalho -->
+    <div class="dividor">
+        <h1>Multimídias</h1>
+            <p>
+                São diversos tipos de mídias, tais como:
+                <ul>
+                    <li>Vídeo</li>
+                    <li>Áudio</li>
+                    <li>Imagem</li>
+                    <li>Sites</li>
+                    <li>Dentre outros</li>
+                </ul>
+            </p>
+            <h2>Incorporando Multimídias a um site</h2>
+                <h3>Tag iframe</h3>
+                    <p>Com essa tag é possível colocar sites, vídeos e áudios.</p>
+                    <h4>Incorporar Sites</h4>
+                        <iframe src="https://irati.ifpr.edu.br" frameborder="1" width="100%" height="400px"></iframe>
+                    <h4>Incorporar Áudio</h4>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1242868615&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/rick-astley-official" title="Rick Astley" target="_blank" style="color: #cccccc; text-decoration: none;">Rick Astley</a> · <a href="https://soundcloud.com/rick-astley-official/never-gonna-give-you-up-4" title="Never Gonna Give You Up" target="_blank" style="color: #cccccc; text-decoration: none;">Never Gonna Give You Up</a></div>
+                    <h4>Incorporar Vídeo</h4>
+                    <iframe width="1013" height="570" src="https://www.youtube.com/embed/eY52Zsg-KVI" allow="autoplay" title="No need to be upset 10 HOURS LONG!!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <h3>Tag vídeo</h3>
+                    <video poster="video/Bike.jpg" controls width="100%">
+                        <source src="video/_Bike.mp4" type="video/mp4">
+                        <source src="video/_Bike.ogv" type="video/ogv">
+                        <source src="video/_Bike.webm" type="video/webm">
+                    </video>
+                <h3>Incorporar audio</h3>
+                <audio preload="metadata" controls >
+                    <source src="audio/Hey Sailor - Letter Box.mp3" type="audio/mp3">
+                    <source src="audio/Hey Sailor - Letter Box.ogg" type="audio/ogg">
+                    <source src="audio/Hey Sailor - Letter Box.wav" type="audio/wav">
+                </audio>
+                <h3>Tag picture</h3>
+                <picture>
+                    <source media="(max-width:500px )" srcset="img/bike_110.jpg">
+                    <source media="(max-width:700px )" srcset="img/bike_320.jpg">
+                    <source media="(max-width:900px )" srcset="img/bike_640.jpg">
+                    <img src="img/bike_full.jpg" alt="">
+                </picture>
+    </div>
 </body>         
 </html>

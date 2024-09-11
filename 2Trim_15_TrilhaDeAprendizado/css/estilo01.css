@@ -4,32 +4,6 @@ body{
     width: 90%; /* O corpo de texto ocupa 90% da área visível do navegador */
     margin:0 auto;/*  divide o conteúdo de forma proporcional no navegador */
 }
-header{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #161616;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    border-radius: 5px;
-}
-#logo img{
-    width: 45%;
-    padding-top: 50px;
-}
-.navegacao{
-    overflow: hidden;
-}
-.navegacao a{
-    color: rgb(173, 173, 173);
-    float: right;
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    text-align: right;
-}
-.navegacao a:hover, .menususpenso:hover .menususbotao{/* faz alterações quando o mouse passa por cima do conteúdo */
-    color: #e32936;
-    background-color: black;
-}
 .principal{ /* Permite que o conteúdo fique "flexível" para manipulação ocupando uma linha disposto em colunas */
     display: flex;
     flex-direction: row;
@@ -50,6 +24,32 @@ header{
     padding: 20px;
 }
 
+.navegacao{
+  overflow: hidden;
+}
+.navegacao a{
+  color: rgb(173, 173, 173);
+  float: right;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: right;
+}
+.navegacao a:hover, .menususpenso:hover .menususbotao{/* faz alterações quando o mouse passa por cima do conteúdo */
+  color: #e32936;
+  background-color: black;
+}
+header{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #161616;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+#logo img{
+  width: 45%;
+  padding-top: 50px;
+}
 .menususpenso {
   float: right; /* Joga a tag pro lado direito de seu divisor */
   overflow: visible; /* Esconde a barra de rolagem */
@@ -90,6 +90,12 @@ header{
 }
 .dividor{
   background-color: white; 
+  border-radius: 5px;
+  padding: 10px;
+}
+.dividor2{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color:lightsalmon;
   border-radius: 5px;
   padding: 10px;
 }

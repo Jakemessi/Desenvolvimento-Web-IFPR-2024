@@ -1,36 +1,3 @@
-body{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: cornflowerblue;
-    text-align: justify;
-    text-shadow:20px;
-}
-h1{
-    background-color: indigo;
-    color: saddlebrown;
-    text-align: center;
-}
-h2{
-    background-color: navajowhite;
-    color: darkblue;
-}
-h3{
-    background-color: cadetblue;
-    color: olive;
-}
-p{
-    background-color: lightcyan;
-    color: black;
-}
-ul{
-    background-color: skyblue;
-    color: brown;
-}
-
-body{
-    background-image: linear-gradient(to right,#0b1726,#1f3f66);
-    width: 90%; /* O corpo de texto ocupa 90% da área visível do navegador */
-    margin:0 auto;/*  divide o conteúdo de forma proporcional no navegador */
-}
 .navegacao{
     overflow: hidden;
   }
@@ -97,6 +64,12 @@ body{
   }
   .dividor{
     background-color: white; 
+    border-radius: 5px;
+    padding: 10px;
+  }
+  .dividor2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color:lightsalmon;
     border-radius: 5px;
     padding: 10px;
   }

@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hyperlinks</title>
+    <link rel="stylesheet" href="../2Trim_15_TrilhaDeAprendizado/css/estilo01.css">
 </head>
-<body>
-    <h1>Hyperlinks</h1>
+<body class="cuerpo">
+    <header> <!-- Tag semantica que define o cabeçalho -->
+        <div id="logo"> <!-- Logotipo do site -->
+            <picture>
+                <img src="../2Trim_15_TrilhaDeAprendizado/img/logo.png" alt="Logotipo">
+            </picture>
+        </div> <!-- Fim do Logotipo do Site -->
+        <nav> <!-- Barra de Navegação -->
+            <div class="navegacao"> <!-- Cria o Menu de Navegação -->
+                <a href="#">Sobre</a>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao">Conteúdo</button> <!-- Atribui função de botão ao texto -->
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                        <a href="../1Trim_05Tags_Imagem/RDE04/Ex01.html">1º Definição de Html</a>
+                        <a href="../1Trim_01BasicoHTML/EX01.html">2º Básico de HTML</a>
+                        <a href="../1Trim_03_Exercicio_Texto/EX00.html">3º Tags de Formatação de Texto</a>
+                        <a href="../1Trim_06_Exercicio/EX00.html">4º Revisão das aulas anteriores</a>
+                        <a href="Ex00.html">5º Hyperlinks</a>
+                        <a href="../1Trim_08_Tabelas/EX00.html">6º Tabelas</a>
+                        <a href="../2Trim_09_Multimidias/midias/index.html">7º Multimídias</a>
+                        <a target="_blank" href="../2Trim_09_Site/index.html">8º Site Original (Link Externo)</a>
+                        <a href="../2Trim_10/index.html">9º Site em Tabelas</a>
+                        <a href="../2Trim_11/AulaCSS.html">10º Introdução ao CSS</a>
+                        <a href="../2Trim_15_DisplayFlexGrid/index.html">11º Display: Flex e Grid</a>
+                      </div>
+                </div>
+                <a href="#">O Projeto</a>
+            </div> <!-- Fim Menu Navegação -->
+        </nav>
+    </header> <!-- Fim do cabeçalho -->
+    <div class="dividor">
+        <h1>Hyperlinks</h1>
         <p>
             São referências dentro de um documento em hipertexto para outras partes do mesmo documento ou outros documentos.
         </p>
@@ -129,5 +160,6 @@
             <p>
                 <a href="download.zip" download="download.zip" type="application/zip">Baixar</a>
             </p>
+    </div>
 </body>
 </html>
