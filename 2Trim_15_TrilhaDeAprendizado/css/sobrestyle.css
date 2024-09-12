@@ -1,6 +1,10 @@
 html, body{
     background-image: linear-gradient(to right,#0b1726,#1f3f66);
     height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .bodysec{
     align-items: center;
@@ -8,11 +12,11 @@ html, body{
     border-radius: 6px;
 }
 .inicio{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-align: center;   
 }
 .meio{
-    padding: 10px 10px;
+    padding: 20px 20px;
     text-align: left;   
 }
