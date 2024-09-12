@@ -5,7 +5,6 @@ body{
     margin:0 auto;/*  divide o conteúdo de forma proporcional no navegador */
 }
 .principal{ /* Permite que o conteúdo fique "flexível" para manipulação ocupando uma linha disposto em colunas */
-  align-items: ;
     display: flex;
     flex-direction: column;
 }
