@@ -1,18 +1,11 @@
 html, body{
     background-image: linear-gradient(to right,#0b1726,#1f3f66);
     height: 100%;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    position: relative;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: large;
-    color: black;
 }
 .bodysec{
+    align-items: center;
     background-color: #fff;
-    border-radius: 6px; 
-    width: 80%;
+    border-radius: 6px;
 }
 .inicio{
     padding-left: 10px;

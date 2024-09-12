@@ -49,6 +49,7 @@ header{
 #logo img{
   width: 45%;
   padding-top: 50px;
+  padding-left: 20px
 }
 .menususpenso {
   float: right; /* Joga a tag pro lado direito de seu divisor */
