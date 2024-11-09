@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício de Laço de Repetição</title>
+</head>
+<body>
+    <h1>Exercício</h1>
+    <p>
+        Crie um código em que seja possível o usuário digitar a tabuada que ele deseja e gere esta tabuada no documento HTML.
+    </p>
+    <script>
+        var resposta
+        resposta = parseInt(prompt("Qual o número que deseja ver a tabuada?"))
+        for(cavalo=0;cavalo<11;cavalo++){
+            document.write("<p>"+resposta+" * "+cavalo+" = "+resposta*cavalo+"<\p>")
+        }
+    </script>
+</body>
+</html>

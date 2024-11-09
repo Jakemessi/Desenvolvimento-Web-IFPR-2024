@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body style="text-align: center; display:grid; align-items: center; max-width: fit-content; margin-left: auto; margin-right: auto;">
+    <h1>Arrays</h1>
+    <p>
+        Arrays são estruturas de dados que permitem inserir vários dados em uma mesma estrutura com tipos iguais ou diferentes.
+    </p>
+    <!-- <script rel="text/javascript" src="js/ex03.js"></script> -->
+    <h1>Lista de Frutas</h1>
+    <!-- Faça um programa que seja possível ao usuário inserir frutas em uma lista, item a item através de uma janela de diálogo. A inserção de itens deve encerrar-se quando o usuário digitar fim. Ao final deve ser apresentada a lista de frutas no documento html. Lembre-se de que a palavra fim não deve ser colocada na lista -->
+    <div style="max-width: fit-content; align-items: center; text-align: center; margin-left: auto; margin-right: auto;">
+    <!-- Versão 1
+    <script>
+        var lista=[],cavalo
+
+        while(cavalo != "fim"){
+            cavalo = prompt("Digite uma fruta ")
+            if(cavalo == "fim"){
+                break
+            }
+            lista.push(cavalo)
+        }
+        /* 
+        i=0
+        while(i<lista.length){ */
+        document.write("<ul>")
+        for(i=0;i<(lista.length);i++){
+            document.write("<li>"+lista[i]+"</li>")
+        }
+        document.write("</ul>")
+    </script> -->
+    <!-- 
+    <script>
+        var lista=[],cavalo
+
+        while(cavalo != "fim"){
+            cavalo = prompt("Digite uma fruta ")
+            lista.push(cavalo)
+        }
+        lista.pop()
+        /* 
+        i=0
+        while(i<lista.length){ */
+        document.write("<ul>")
+        for(i=0;i<(lista.length);i++){
+            document.write("<li>"+lista[i]+"</li>")
+        }
+        document.write("</ul>")
+    </script> -->
+    </div>
+</body>
+</html>

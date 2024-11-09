@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Múltipla Escolha</title>
+</head>
+<body>
+    <h1>Múltipla escolha</h1>
+    <p>
+        Crie um programa que digitado o número pelo usuário diga o dia da semana correspondente.
+        Exemplo: Entrada:1 Saída: Domingo
+    </p>
+    <script>
+        var entrada,saida
+        entrada=parseInt(prompt("Digite um valor de entrada "))
+        if (entrada > 7){
+            entrada = entrada - 7
+        }
+        switch (entrada){
+            case 1: 
+                saida = "Domingo" 
+                break;
+            case 2: 
+                saida = "Segunda-feira" 
+                break;
+            case 3: 
+                saida = "Terça-feira" 
+                break;
+            case 4: 
+                saida = "Quarta-feira" 
+                break;
+            case 5: 
+                saida = "Quinta-feira" 
+                break;
+            case 6: 
+                saida = "Sexta-feira" 
+                break;
+            case 7: 
+                saida = "Sábado" 
+                break;
+        }
+        alert(saida)
+        document.write(saida)
+    </script>
+</body>
+</html>
