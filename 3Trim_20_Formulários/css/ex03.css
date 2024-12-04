@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; 
+    align-items: center; 
+    flex-direction: column; 
+    text-align: left;
+    background-color: #282828;
+    margin: auto;
+    color: white;
+    width: 100%;
+    margin-top: 10%;
+}
+form{
+    width: 50%;
+    height: 50%;
+    font-size: large;
+    background-color:#1F3D64;
+    max-width: 1024px;
+    max-height: 1024px;
+    border-radius: 5px;
+    box-shadow: 20px 20px 10px #08101a98;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: auto;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid;
+    background-color: gainsboro;
+}
+
+.enviar{
+    width: fit-content;
+    align-self: center;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFinances</title>
+</head>
+<body>
+    <form id="formcadastro">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" required> <br>
+        <label for="nome">Categoria:</label><br>
+        <select name="categoria" id="categoria">
+            <option value="default" disabled selected>Categoria</option>
+            <option value="despesa">Despesa</option>
+            <option value="receita">Receita</option>
+        </select><br>
+        <label for="nome">Data:</label><br>
+        <input type="date" id="data" required> <br>
+        <label for="idade">Valor:</label><br>
+        <input type="number" id="valor" required><br>
+        <button type="submit" onclick="listagemRecente">Cadastrar</button>
+    </form>
+    <a href="listagem.html">Listagem</a>
+    <h1>Registro Recente</h1>
+    <ul id="listarecente">
+        
+    </ul>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

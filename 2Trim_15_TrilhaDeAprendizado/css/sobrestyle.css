@@ -1,5 +1,5 @@
 html, body{
-    background-image: linear-gradient(to right,#0b1726,#1f3f66);
+    background-color: #161616;
     height: 100%;
     padding-left: 30px;
     padding-right: 30px;
@@ -7,11 +7,13 @@ html, body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .bodysec{
+    margin-top: 30px;
     align-items: center;
-    background-color: #fff;
     border-radius: 6px;
+    background-color: white;
 }
 .inicio{
+    padding-top: 1px;
     padding-left: 20px;
     padding-right: 20px;
     text-align: center;   
