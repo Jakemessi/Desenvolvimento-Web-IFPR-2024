@@ -10,6 +10,7 @@ html, body{
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
+    scrollbar-width: thin;
 }
 #navegador{
     width:100%;
