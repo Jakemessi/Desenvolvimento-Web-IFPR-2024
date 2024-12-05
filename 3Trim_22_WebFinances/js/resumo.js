@@ -34,6 +34,9 @@ function carregarRegistros() {
     if(total < 0 ){
         tot.innerHTML = `<p>Com base no total de suas transações, você está com uma divída de <span style="color: red;"">${total*-1}</span> reais.</p>`
     }
+    else if(total == 0){
+             tot.innerHTML = `<p>Com base nas transições registradas, você não está em situação de lucro mas pelo menos não está devendo também</p>`
+    }
     else{
         tot.innerHTML = `<p>Com base no total de suas transações, você está com um lucro de <span style="color: green;">${total}</span> reais.</p>`
     }
