@@ -4,12 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebFinances</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/listagem.css">
 </head>
 <body>
-    <script type="text/javascript" src="js/listagem.js"></script>
+    <script type="text/javascript" src="js/header.js" id="navbar"></script>
     <h1>Listagem Financeira</h1>
-    <ul id="listafinanceira">
+    <div class="fundo">
+        <script type="text/javascript" src="js/listagem.js"></script>
+        <button><a href="index.html">Voltar</a></button>
+        <h3>Receitas</h3>
+        <ul id="receitas" style="margin-bottom:10px;">
 
-    </ul>
+        </ul>
+        <button class="botao" onclick="aptr()">Apagar tudo</button>
+        <h3>Despesas</h3>
+        <ul id="despesas">
+
+        </ul>
+        <button class="botao" onclick="aptd()">Apagar tudo</button>
+    </div>
 </body>
 </html>

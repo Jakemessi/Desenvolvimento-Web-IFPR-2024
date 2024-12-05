@@ -5,24 +5,22 @@ function salvarRegistro(event) {
     const nome = document.getElementById('nome').value;
     const valor = parseFloat(document.getElementById('valor').value);
     const data = document.getElementById('data').value;
+    const categoria = document.getElementById('categoria').value;
 
     if (nome && valor && data) {
-        const novoRegistro = { nome, valor, data };
+        const novoRegistro = { nome, valor, data, categoria };
         const registros = JSON.parse(localStorage.getItem('registrosFinanceiros')) || [];
         registros.push(novoRegistro);
         // Salvar novamente no localStorage
         localStorage.setItem('registrosFinanceiros', JSON.stringify(registros));
-        
-        while (lista.firstChild) {
-            lista.removeChild(lista.firstChild);
-        }
-        
+
         listagemRecente();
 
         // Limpar os campos
         document.getElementById('nome').value = '';
         document.getElementById('valor').value = '';
         document.getElementById('data').value = '';
+        document.getElementById('categoria').value = 0;
 
     }
 }
@@ -33,11 +31,15 @@ function listagemRecente() {
     const nome = document.getElementById('nome').value;
     const cavalo = parseFloat(document.getElementById('valor').value);
     const data = document.getElementById('data').value;
+    const categoria = document.getElementById('categoria').value;
     const lista = document.getElementById('listarecente');
-
+    /* Serve para apagar o registro anterior */
+    while (lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }
     const li = document.createElement('li');
         li.innerHTML = `
-            <span>${nome} - R$ ${cavalo.toFixed(2)} - ${data}</span>
+            <span>${categoria} - ${nome} - R$ ${cavalo.toFixed(2)} - ${data}</span>
         `;
         lista.appendChild(li);
 }

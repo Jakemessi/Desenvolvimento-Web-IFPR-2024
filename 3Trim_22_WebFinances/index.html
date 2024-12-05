@@ -4,28 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebFinances</title>
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <form id="formcadastro">
-        <label for="nome">Nome:</label><br>
-        <input type="text" id="nome" required> <br>
-        <label for="nome">Categoria:</label><br>
-        <select name="categoria" id="categoria">
-            <option value="default" disabled selected>Categoria</option>
-            <option value="despesa">Despesa</option>
-            <option value="receita">Receita</option>
-        </select><br>
-        <label for="nome">Data:</label><br>
-        <input type="date" id="data" required> <br>
-        <label for="idade">Valor:</label><br>
-        <input type="number" id="valor" required><br>
-        <button type="submit" onclick="listagemRecente">Cadastrar</button>
-    </form>
-    <a href="listagem.html">Listagem</a>
-    <h1>Registro Recente</h1>
-    <ul id="listarecente">
-        
-    </ul>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/header.js" id="navbar"></script>
+    <h1 style="margin-top: 0px;">Centro de Cadastramento Financeiro</h1>
+    <div class="fundo">
+        <form id="formcadastro">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required placeholder="Digite o título ou uma descrição dessa transação">
+            <br>
+            <label for="categoria">Categoria:</label>
+            <select name="categoria" id="categoria" required>
+                <option value="0" disabled selected>Selecione</option>
+                <option value="Despesa">Despesa</option>
+                <option value="Receita">Receita</option>
+            </select>
+            <br>
+            <label for="data">Data da ocorrência:</label>
+            <input type="date" id="data" required>
+            <br>
+            <label for="valor">Valor:</label>
+            <input type="text" onkeyup="this.value=thisvalue.replace(',','.')" id="valor" placeholder="Digite aqui o valor monetário da transação" required>
+            <div style="display: flex;flex-direction: row; justify-content: space-evenly; width: 100%;">
+                <button type="button" class="botao"><a href="listagem.html">Listagem</a></button>
+                <button type="submit" class="botao">Cadastrar</button>
+            </div>
+        </form>
+        <h1>Registro Recente</h1>
+        <ul id="listarecente">
+
+        </ul>
+        <script type="text/javascript" src="js/script.js"></script>
+    </div>
 </body>
 </html>

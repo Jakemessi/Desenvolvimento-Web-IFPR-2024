@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebFinances</title>
+    <link rel="icon" href="img/dollar.png">
+    <link rel="stylesheet" href="css/default.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/resumo.js"></script>
+</head>
+<body>
+    <script type="text/javascript" src="js/header.js" id="navbar"></script>
+    <H1>Resumo Financeiro das Transições</H1>
+    <div id="resumo">
+
+    </div>
+    <div>
+        <label for="filtro">Filtrar:</label>
+        <select id="filtro" onchange="atualizarGrafico()">
+            <option value="todas">Todas</option>
+            <option value="receitas">Apenas Receitas</option>
+            <option value="despesas">Apenas Despesas</option>
+        </select>
+    </div>
+    <canvas id="graficoBarras" width="400" height="200"></canvas>
+    </div>
+    <ul id="receitas"></ul>
+    <ul id="despesas"></ul>
+    <script src="script.js"></script>
+</body>
+</html>
