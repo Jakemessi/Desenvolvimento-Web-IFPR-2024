@@ -68,14 +68,13 @@ function aptr(){
     /* Serve para apagar todos os registros de receitas*/
     while (lista.firstChild) {
         lista.removeChild(lista.firstChild);
+        lista.removeChild(lista.firstChild);
         removerRegistro(0)
     }
 }
 function aptd(){
     const lista = document.getElementById('despesas');
     /* Serve para apagar todos os registros de despesas*/
-    while (lista.firstChild) {
         lista.removeChild(lista.firstChild);
         removerRegistro(0)
-    }
 }
