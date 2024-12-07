@@ -6,13 +6,57 @@
     <title>Trilha do Aprendizado</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navegador.css">
+    <link rel="stylesheet" href="css/sobrestyle.css">
+    <link rel="stylesheet" href="css/projetostyle.css">
     <script rel="text/javascript" src="js/voltaparacima.js"></script>
+    <script type="text/javascript" src="js/sub-pages.js" id="main"></script>
 </head>
 <body>
-    <script type="text/javascript" src="js/barradenavegacao.js" id="navbar"></script>
-    <main> <!-- Tag semantica que indica o conteúdo principal -->
+    <header>
+        <nav> <!-- Barra de Navegação -->
+            <div class="navegacao"> <!-- Cria o Menu de Navegação -->
+                <button onclick="subpages('sub-pages/inicio.html')">Início</button>
+                <button onclick="subpages('sub-pages/projeto.html')">O Projeto</button>
+                <!-- <a href="sobre.html">Sobre</a> -->
+                <button onclick="subpages('sub-pages/sobre.html')">Sobre</button>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao" onclick="subpages('sub-pages/conteudos.html')">Conteúdo</button>
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                        <!-- <button onclick="subpages('../1Trim_05Tags_Imagem/RDE04/Ex01.html')">1º Definição de Html</button>
+                        <button onclick="subpages('../1Trim_01BasicoHTML/EX01.html')">2º Básico de HTML</button>
+                        <button onclick="subpages('../1Trim_03_Exercicio_Texto/EX00.html')">3º Tags de Formatação de Texto</button>
+                        <button onclick="subpages('../1Trim_06_Exercicio/EX00.html')">4º Revisão das aulas anteriores</button>
+                        <button onclick="subpages('../1Trim_07_HyperLinks/Ex00.html')">5º Hyperlinks</button>
+                        <button onclick="subpages('../1Trim_08_Tabelas/EX00.html')">6º Tabelas</button>
+                        <button onclick="subpages('../2Trim_09_Multimidias/midias/index.html')">7º Multimídias</button>
+                        <button onclick="subpages('../2Trim_09_Site/index.html')">8º Site Original (Link Externo)</button>
+                        <button onclick="subpages('../2Trim_10/index.html')">9º Site em Tabelas</button>
+                        <button onclick="subpages('../2Trim_11/AulaCSS.html')">10º Introdução ao CSS</button>
+                        <button onclick="subpages('../2Trim_15_DisplayFlexGrid/index.html')">11º Display: Flex e Grid</button>
+                        <button onclick="subpages('../2Trim_16_Parallax/index.html')">12º Parallax</button> -->
+                        <a href="../1Trim_05Tags_Imagem/RDE04/Ex01.html">1º Definição de Html</a>
+                        <a href="../1Trim_01BasicoHTML/EX01.html">2º Básico de HTML</a>
+                        <a href="../1Trim_03_Exercicio_Texto/EX00.html">3º Tags de Formatação de Texto</a>
+                        <a href="../1Trim_06_Exercicio/EX00.html">4º Revisão das aulas anteriores</a>
+                        <a href="../1Trim_07_HyperLinks/Ex00.html">5º Hyperlinks</a>
+                        <a href="../1Trim_08_Tabelas/EX00.html">6º Tabelas</a>
+                        <a href="../2Trim_09_Multimidias/midias/index.html">7º Multimídias</a>
+                        <a target="_blank" href="../2Trim_09_Site/index.html">8º Site Original (Link Externo)</a>
+                        <a href="../2Trim_10/index.html">9º Site em Tabelas</a>
+                        <a href="../2Trim_11/AulaCSS.html">10º Introdução ao CSS</a>
+                        <a href="../2Trim_15_DisplayFlexGrid/index.html">11º Display: Flex e Grid</a>
+                        <a href="../2Trim_16_Parallax/index.html">12º Parallax</a>
+                        <a target="_blank" href="../../3Trim_22_WebFinances/index.html">WebFinances (Link Externo)</a>
+
+
+                      </div>
+                </div>
+            </div> <!-- Fim Menu Navegação -->
+        </nav>
+    </header>
+    <main id="main"> <!-- Tag semantica que indica o conteúdo principal -->
         <div class="inicio" style="width: 100%;">
-            <img src="img/logo.png" alt="" style="width: 70%; margin-top: 14%; margin-bottom: 20%;">
+            <img src="img/logo.png" alt="" style="width: 50%; margin-top: 16%; margin-bottom: 22%;">
         </div>
         <div class="principal"> <!-- Bloco Principal -->
             <div class="meio">
@@ -51,7 +95,7 @@
         </div> <!-- Fim Bloco Principal -->
     </main> <!-- Fim do conteúdo principal -->
     <footer> <!-- Tag semantica de rodapé -->
-        <div class="rodape"> <!-- Bloco Rodapé -->
+        <div id="rodape"> <!-- Bloco Rodapé -->
             <p>
                 &copy Todos direitos reservados
             </p>

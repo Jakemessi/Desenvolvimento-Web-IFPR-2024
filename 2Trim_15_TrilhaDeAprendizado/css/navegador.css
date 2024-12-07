@@ -1,15 +1,21 @@
 header{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #161616;
-    margin-top: auto;
-    margin-bottom: auto;
-    border-radius: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #161616;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+  justify-self: center;
 }
 body{
   margin-top: 0px;
 }
 .navegacao{
-    overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  justify-content: flex-end;
+  justify-items: center;
+  align-items: center;
 }
 
 #logo img{
@@ -19,32 +25,39 @@ body{
 }
 
 .navegacao a{
-    color: rgb(173, 173, 173);
-    float: right;
-    display: block;
-    text-decoration: none;
-    padding: 10px;
-    text-align: right;
+  color: rgb(173, 173, 173);
+  float: right;
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  text-align: right;
 }
 
-.navegacao a:hover, .menususpenso:hover .menususbotao{/* faz alterações quando o mouse passa por cima do conteúdo */
+.navegacao a:hover, .menususpenso:hover .menususbotao, button:hover{/* faz alterações quando o mouse passa por cima do conteúdo */
   color: #e32936;
   background-color: black;
 }
-
+button{
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  font-size: large;
+}
+.menususpenso-conteudo button{
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 .menususpenso {
   float: right; /* Joga a tag pro lado direito de seu divisor */
   overflow: visible; /* Esconde a barra de rolagem */
 }
 
-.menususpenso .menususbotao {
+.menususpenso{
   font-size: 16px;  /* Tamanho da fonte */
   border: none; /* Tira a borda */
   outline: none; /* Tira o sublinhado de seleção */
   color: rgb(173, 173, 173); /* Altera a cor do botão */
   background-color: inherit; /* Pega a mesma cor de Background de sua seção */
   font-family: inherit; /* Pega a mesma fonte de sua seção */
-  padding: 10px;
 }
 
 .menususpenso-conteudo {

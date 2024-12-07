@@ -12,6 +12,15 @@ body,html{
 header{
     align-self: stretch;
 }
+button,a{
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    font-size: large;
+    text-decoration: none;
+    color: darkgrey;
+    background-color: transparent;
+    border-color: transparent;
+}
 .dividor{
     width: 94%;
     background-color: gainsboro;

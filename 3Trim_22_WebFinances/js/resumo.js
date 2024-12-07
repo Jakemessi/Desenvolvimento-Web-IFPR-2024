@@ -37,8 +37,11 @@ function carregarRegistros() {
     else if(total == 0){
              tot.innerHTML = `<p>Com base nas transições registradas, você não está em situação de lucro mas pelo menos não está devendo também</p>`
     }
-    else{
+    else if(total>0){
         tot.innerHTML = `<p>Com base no total de suas transações, você está com um lucro de <span style="color: green;">${total}</span> reais.</p>`
+    }
+    else{
+        tot.innerHTML = `<p>Por enquanto não foi registrado quaisquer transações.</p>`
     }
     criarGrafico(receitas, despesas); // Cria ou atualiza o gráfico
 }
