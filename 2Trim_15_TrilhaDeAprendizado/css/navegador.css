@@ -5,7 +5,9 @@ header{
     margin-bottom: auto;
     border-radius: 5px;
 }
-
+body{
+  margin-top: 0px;
+}
 .navegacao{
     overflow: hidden;
 }
