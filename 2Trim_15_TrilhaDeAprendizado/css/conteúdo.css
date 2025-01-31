@@ -1,0 +1,34 @@
+#tabela{
+    margin-top: 10px;
+    background: white;
+    width: 90%;
+    height: fit-content;
+    border-radius: 10px;
+    padding: 10px 10px;
+    align-self: center;
+    justify-self: center;
+    font-size: large;
+}
+#tabela table{
+    border-collapse: collapse;
+    margin: 20px 60px;
+}
+#tabela th span{
+    width: fit-content;
+    cursor: pointer;
+}
+#tabela th span:hover{
+    text-decoration: underline;
+}
+#tabela th, #tabela td{
+    border: 1px solid rgb(140 140 140);
+    padding: 5px 5px;
+}
+#titulo {
+    margin-bottom: 5px;
+    font-size: larger;
+    font-weight: bold;
+}
+.descricaotexto{
+    width: 50%;
+}

@@ -1,6 +1,14 @@
 .salamalenco{
     display: flex;
-    width: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+}
+.salamalenco img{
+    flex:1;
 }
 .salamalenco2{
     display: flebox;

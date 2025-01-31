@@ -6,13 +6,26 @@
     <title>Trilha do Aprendizado</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/navegador.css">
-    <link rel="stylesheet" href="css/sobrestyle.css">
     <link rel="stylesheet" href="css/projetostyle.css">
-    <script rel="text/javascript" src="js/voltaparacima.js"></script>
+    <link rel="stylesheet" href="css/conteúdo.css">
+    <link rel="stylesheet" href="css/sobrestyle.css">
     <script type="text/javascript" src="js/sub-pages.js" id="main"></script>
+    <script>
+        function Copiar(){
+        var usuariodiscord = new String("huehuller");
+        navigator.clipboard.writeText(usuariodiscord);
+        var tooltip = document.getElementById("tooltip");
+        tooltip.style.opacity = 1;
+        tooltip.innerHTML = "Copiado, cole na aba amigos do discord";
+        }
+        function outFunc() {
+          var tooltip = document.getElementById("tooltip");
+          tooltip.style.opacity = 0;
+        }
+    </script>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav> <!-- Barra de Navegação -->
             <div class="navegacao"> <!-- Cria o Menu de Navegação -->
                 <button onclick="subpages('sub-pages/inicio.html')">Início</button>
@@ -47,16 +60,14 @@
                         <a href="../2Trim_15_DisplayFlexGrid/index.html">11º Display: Flex e Grid</a>
                         <a href="../2Trim_16_Parallax/index.html">12º Parallax</a>
                         <a target="_blank" href="../../3Trim_22_WebFinances/index.html">WebFinances (Link Externo)</a>
-
-
                       </div>
                 </div>
             </div> <!-- Fim Menu Navegação -->
         </nav>
     </header>
     <main id="main"> <!-- Tag semantica que indica o conteúdo principal -->
-        <div class="inicio" style="width: 100%;">
-            <img src="img/logo.png" alt="" style="width: 50%; margin-top: 16%; margin-bottom: 22%;">
+        <div class="inicio">
+            <img src="img/logo.png" alt="">
         </div>
         <div class="principal"> <!-- Bloco Principal -->
             <div class="meio">
@@ -88,18 +99,17 @@
                     <br>
                     Agora sobre a matéria Desenvolvimento Web que foi a que proporcionou a criação desse projeto, é uma matéria do Curso Técnico em Tecnologia de Informação subsequente ao Ensino Médio, nesse caso, o Ensino Médio do Instituto Federal Campus Irati.
                     <br>
-                    Na disciplina DevWeb, os alunos aprenderão e experimentarão a criação de websites utilizando desde o HTML até mesmo JavaScript, em alguns casos podendo até mesmo aprender PhP e ademais linguagens.
+                    Na disciplina DevWeb, os alunos aprenderão e experimentarão a criação de websites utilizando desde o HTML até o JavaScript.
                 </p>
                 <iframe src="https://irati.ifpr.edu.br" frameborder="0" width="70%" height="700px"></iframe>
             </div>
         </div> <!-- Fim Bloco Principal -->
     </main> <!-- Fim do conteúdo principal -->
     <footer> <!-- Tag semantica de rodapé -->
-        <div id="rodape"> <!-- Bloco Rodapé -->
-            <p>
-                &copy Todos direitos reservados
-            </p>
-            <button onclick="FuncaoVoltaraoTopo()" title="Voltar ao topo da página">Voltar ao topo</button>
+        <div id="rodape" > <!-- Bloco Rodapé -->
+            <button onclick="window.scrollTo({ top: 1, behavior: 'smooth' })" title="Voltar ao topo da página">Voltar ao topo</button>
+            <br>
+            <span>&copy Todos direitos reservados</span>
         </div>
     </footer> <!-- Final da Tag semantica de rodapé -->
 </body>

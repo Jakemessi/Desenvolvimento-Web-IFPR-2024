@@ -4,17 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre</title>
+    <script>
+        function Copiar(){
+        var usuariodiscord = new String("huehuller");
+        navigator.clipboard.writeText(usuariodiscord);
+        }
+    </script>
 </head>
 <body>
     <div class="sobrebodysec">
+        <h1>Sobre mim</h1>
         <div class="sobreinicio">
-            <h1>Sobre mim</h1>
             <p>
                 Meu nome é Huehuller, Huehuller Glehyson da Silva Veine, nascido no dia 9 de agosto de 2007 em Wesceslau Braz, atualmente (pelo menos em 10 de setembro de 2024) resido em Imbituva no Paraná.
             </p>
         </div>
         <div class="sobremeio">
-            Neste momento, estou cursando o ultimo ano do Ensino Médio com curso Técnico em Informática subsquente ao mesmo sendo meu primeiro ano ocorrendo em 2022, que, por curiosidade, todos se não maioria entraram através de um sorteio público por culpa da pandemia da Covid-19.
+            Até a ultima alteração nessa página, eu já fui aprovado no Ensino Médio com curso Técnico em Informática subsquente ao mesmo do Instituto Federal Campus Irati cujo comecei em 2022, que, por curiosidade, todos se não maioria entraram através de um sorteio público por culpa da pandemia da Covid-19.
+            <br>
+            Atualmente estou tentando entrar na UEPG para cursar Engenharia de Software no período noturno.
+        </div>
+        <div class="links">
+            <!-- <table>
+                <caption id="titulo">Links Externos</caption>
+                <thead>
+                    <tr>
+                        <th scope="col"><img src="https://avatars.fastly.steamstatic.com/da431a86bb8bbc8fd7ca02b92deb29ecc077c517_full.jpg" height="128px" alt=""></th>
+                        <th scope="col"><img src="https://cdn.discordapp.com/avatars/321282239663177730/9616a5e57e8b7e83d11b911e00e77e77.webp?size=128" alt=""></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Steam</td>
+                        <td>Discord</td>
+                    </tr>
+                </tbody>
+            </table> -->
+            <span id="titulo">Links Externos</span>
+            <div id="imagens">
+                <span id="steam">
+                    <span span onclick="location.href = 'https://steamcommunity.com/id/OJakemessiEHuehuller/';">
+                    <div class="pointer">
+                        <span class="pointer"></span>
+                    </div>
+                    </span>
+                </span>
+                <span id="discord">
+                    <span onclick="Copiar()">
+                        <div class="pointer" onmouseout="outFunc()">
+                        </div>
+                        <span class="pointer" id="textodiscord">
+                            <span id="tooltip"></span>
+                        </span>
+                    </span>
+                </span>
+            </div>
         </div>
     </div>
 </body>
