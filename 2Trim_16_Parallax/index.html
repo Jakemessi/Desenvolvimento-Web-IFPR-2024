@@ -5,17 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parallax Demo</title>
+    <script type="text/javascript" src="../2Trim_15_TrilhaDeAprendizado/js/default.js" id="main"></script>
     <link rel="stylesheet" href="css/estilo_try2.css">
     <link rel="stylesheet" href="../2Trim_15_TrilhaDeAprendizado/css/navegador.css">
+    <style>
+        header{
+            width: 100%;
+        }
+        body,html{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            scrollbar-width: none;
+            overflow-x: hidden;
+        }
+        button, a {
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+            font-size: large;
+            text-decoration: none;
+            color: darkgrey;
+            background-color: transparent;
+            border-color: transparent;
+        }
+        .navegacao{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
 </head>
 <body>
-    <header style="margin-top: 0px; margin-bottom: 0px; border-radius: 0px;"> <!-- Tag semantica que define o cabeçalho -->
-        <nav> <!-- Barra de Navegação -->
+    <header id="header2"> <!-- Tag semantica que define o cabeçalho -->
+        <div id="logo"> <!-- Logotipo do site -->
+            <picture>
+                <a href="../2Trim_15_TrilhaDeAprendizado/index.html"><img src="../2Trim_15_TrilhaDeAprendizado/img/logo.png" alt="Logotipo"></a>
+            </picture>
+        </div> <!-- Fim do Logotipo do Site -->
+        <nav id="navig"> <!-- Barra de Navegação -->
             <div class="navegacao"> <!-- Cria o Menu de Navegação -->
-                <a href="../../2Trim_15_TrilhaDeAprendizado/index.html">Início</a>
-                <div class="menususpenso" style="z-index: 1; font-size: 12px"> <!-- Começo do agrupamento para o menu suspenso -->
-                    <button class="menususbotao" style="z-index: 1;">Conteúdo</button> <!-- Atribui função de botão ao texto -->
-                    <div class="menususpenso-conteudo" style="z-index: 1; width: 150px"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                <a href="../2Trim_15_TrilhaDeAprendizado/index.html">Início</a>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao">Conteúdo</button> <!-- Atribui função de botão ao texto -->
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
                         <a href="../1Trim_05Tags_Imagem/RDE04/Ex01.html">1º Definição de Html</a>
                         <a href="../1Trim_01BasicoHTML/EX01.html">2º Básico de HTML</a>
                         <a href="../1Trim_03_Exercicio_Texto/EX00.html">3º Tags de Formatação de Texto</a>

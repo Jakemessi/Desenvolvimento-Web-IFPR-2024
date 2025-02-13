@@ -3,12 +3,24 @@ header{
   background-color: #161616;
   margin-top: 0px;
   margin-bottom: 0px;
-  border-radius: 5px;
   justify-self: center;
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
+
 body{
   margin-top: 0px;
 }
+
+#navig{
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
 .navegacao{
   display: flex;
   flex-direction: row;
@@ -19,9 +31,8 @@ body{
 }
 
 #logo img{
-  width: 45%;
-  padding-top: 50px;
-  padding-left: 20px;
+  width: 100%;
+  padding: 25px 20px;
 }
 
 .navegacao a{
@@ -48,7 +59,8 @@ button{
 }
 .menususpenso {
   float: right; /* Joga a tag pro lado direito de seu divisor */
-  overflow: visible; /* Esconde a barra de rolagem */
+  overflow: visible;
+  scrollbar-width: thin;
 }
 
 .menususpenso{
