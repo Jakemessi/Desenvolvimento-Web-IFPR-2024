@@ -1,5 +1,6 @@
 body,html{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
     background-image: linear-gradient(to right,#161616,#161616);
     background-color: #161616;
     scrollbar-width: none;
@@ -30,7 +31,44 @@ button,a{
     border-radius: 5px;
     box-shadow: 10px 10px 10px #08101a98;
 }
+.flex{
+    display: flex;
+}
+.coluna{
+    flex-direction: column;
+}
 .navegacao{
     padding-left: 20px ;
     padding-right: 20px ;
+}
+.titulo{
+    justify-self: center;
+    margin: 10px 0px;
+}
+.texto{
+    margin: 10px 20px;
+}
+.lista{
+    margin-left: 30px;
+}
+.centro{
+    justify-self: center;
+}
+.centralizar{
+    align-self: center;
+}
+.botaocomfundo{
+    font-family: 'Times New Roman', Times, serif;
+    cursor: pointer;
+    font-size: large;
+    text-decoration: none;
+    color: black;
+    border-color: black;
+    border-width: 1px;
+}
+.botaocomfundo:hover{
+    color: blue;
+}
+.pointer{
+    cursor: pointer;
 }

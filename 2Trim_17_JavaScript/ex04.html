@@ -9,8 +9,17 @@
 <body>
     <p>
         <ol>
-        
             <li>Elabore um programa em que solicite ao usuário dois números n1 e n2, realize a subtração dos dois valores</li>
+            <code>
+                var resultado,n1,n2,sub
+                    n1=prompt("Insira um número a ser subtraido: ")
+                    n2=prompt("Insira outro número que corresponde ao valor que vai subtrair: ")
+
+                    sub=parseFloat(n1)-parseFloat(n2)
+
+                    resultado="A subtração resultou em "+sub
+                    document.write(resultado)
+            </code>
             <script rel="text/javascript">
                 var resultado,n1,n2,sub
                     n1=prompt("Insira um número a ser subtraido: ")
@@ -22,6 +31,16 @@
                     document.write(resultado)
             </script>
             <li>Faça um exercício que realize a multiplicação de 3 números</li>
+            <code>
+                var v1,v2,v3,mult,resultado
+                    v1=prompt("Insira um número a ser multiplicado: ")
+                    v2=prompt("Insira mais um número a ser multiplicado: ")
+                    v3=prompt("Insira mais um número a ser multiplicado: ")
+
+                    mult=parseFloat(v1)*parseFloat(v2)*parseFloat(v3)
+                    resultado="A multiplicação de 3 números equivale à "+mult
+                    document.write(resultado)
+            </code>
             <script rel="text/javascript">
                 var v1,v2,v3,mult,resultado
                     v1=prompt("Insira um número a ser multiplicado: ")
@@ -33,6 +52,14 @@
                     document.write(resultado)
             </script>
             <li>Realize o cubo de um número dgitado pelo usuário</li>
+            <code>
+                var v1,cub,resultado
+                    v1=prompt("Insira um número a ser elevado ao cubo: ")
+
+                    cub=parseFloat(v1)*parseFloat(v1)*parseFloat(v1)
+                    resultado="O cubo de "+v1+" equivale a "+cub
+                    document.write(resultado)
+            </code>
             <script rel="text/javascript">
                 var v1,cub,resultado
                     v1=prompt("Insira um número a ser elevado ao cubo: ")
@@ -42,6 +69,15 @@
                     document.write(resultado)
             </script>
             <li>Faça um código que exiba o antecessor e o sucessor de um número digitado pelo usuário</li>
+            <code>
+                var v1,ant,suc,resultado
+                    v1=prompt("Insira um número a ser descoberto o antecessor e o sucessor: ")
+                    ant=parseInt(v1)-1
+                    suc=parseInt(v1)+1
+
+                    resultado=ant+" e "+suc+" são respectivamente o antecessor e o sucessor de "+v1
+                    document.write(resultado)
+            </code>
             <script rel="text/javascript">
                 var v1,ant,suc,resultado
                     v1=prompt("Insira um número a ser descoberto o antecessor e o sucessor: ")
@@ -52,6 +88,15 @@
                     document.write(resultado)
             </script>
             <li>Faça um programa que realize o cálculo da área do triângulo</li>
+            <code>
+                var v1,v2,area,resultado  
+                    v1=prompt("Insira a base do triângulo em centimetros: ")
+                    v2=prompt("Insira a altura do triângulo em centimetros: ")
+
+                    area=(parseFloat(v1)*parseFloat(v2))/2
+                    resultado="A área do triângulo equivale à "+area+"cm³"
+                    document.write(resultado)
+            </code>
             <script rel="text/javascript">
                 var v1,v2,area,resultado  
                     v1=prompt("Insira a base do triângulo em centimetros: ")

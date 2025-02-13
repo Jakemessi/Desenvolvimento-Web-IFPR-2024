@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="icon" href="img/Unofficial_JavaScript_logo_2.svg">
+    <script type="text/javascript" src="../2Trim_15_TrilhaDeAprendizado/js/default.js" id="main"></script>
+    <link rel="stylesheet" href="../2Trim_15_TrilhaDeAprendizado/css/navegador.css">
+    <link rel="stylesheet" href="../2Trim_15_TrilhaDeAprendizado/css/default.css">
+    <link rel="stylesheet" href="css/JavaScriptAlmanaque.css">
+</head>
+<body>
+    <header id="header2"> <!-- Tag semantica que define o cabeçalho -->
+        <div id="logo"> <!-- Logotipo do site -->
+            <picture>
+                <a href="../2Trim_15_TrilhaDeAprendizado/index.html"><img src="../2Trim_15_TrilhaDeAprendizado/img/logo.png" alt="Logotipo"></a>
+            </picture>
+        </div> <!-- Fim do Logotipo do Site -->
+        <nav> <!-- Barra de Navegação -->
+            <div class="navegacao"> <!-- Cria o Menu de Navegação -->
+                <a href="../2Trim_15_TrilhaDeAprendizado/index.html">Início</a>
+                <div class="menususpenso"> <!-- Começo do agrupamento para o menu suspenso -->
+                    <button class="menususbotao">Conteúdo</button> <!-- Atribui função de botão ao texto -->
+                    <div class="menususpenso-conteudo"> <!-- Começa a definir/agrupar os conteúdos do menu suspenso -->
+                        <a href="../1Trim_05Tags_Imagem/RDE04/Ex01.html">1º Definição de Html</a>
+                        <a href="../1Trim_01BasicoHTML/EX01.html">2º Básico de HTML</a>
+                        <a href="../1Trim_03_Exercicio_Texto/EX00.html">3º Tags de Formatação de Texto</a>
+                        <a href="../1Trim_06_Exercicio/EX00.html">4º Revisão das aulas anteriores</a>
+                        <a href="Ex00.html">5º Hyperlinks</a>
+                        <a href="../1Trim_08_Tabelas/EX00.html">6º Tabelas</a>
+                        <a href="../2Trim_09_Multimidias/midias/index.html">7º Multimídias</a>
+                        <a target="_blank" href="../2Trim_09_Site/index.html">8º Site Original (Link Externo)</a>
+                        <a href="../2Trim_10/index.html">9º Site em Tabelas</a>
+                        <a href="../2Trim_11/AulaCSS.html">10º Introdução ao CSS</a>
+                        <a href="../2Trim_15_DisplayFlexGrid/index.html">11º Display: Flex e Grid</a>
+                        <a href="../2Trim_16_Parallax/index.html">12º Parallax</a>
+                        <a href="JavaScriptAlmanaque.html">13º JavaScript</a>
+                      </div>
+                </div>
+                <a target="_blank" href="../3Trim_22_WebFinances/index.html">WebFinances</a>
+            </div> <!-- Fim Menu Navegação -->
+        </nav>
+    </header> <!-- Fim do cabeçalho -->
+    <div class="dividor flex coluna">
+        <h1 class="titulo centralizar">JavaScript</h1>
+            <p class="texto">JavaScript é uma linguagem de script multiplataforma, orientada a objetos, usada para tornar páginas da web interativas (por exemplo, ter animações complexas, botões clicáveis, menus pop-up, etc.). Há também versões mais avançadas do lado do servidor do JavaScript, como o Node.js, que permite adicionar mais funcionalidade a um site do que baixar arquivos (como colaboração em tempo real entre vários computadores). Dentro de um ambiente host (por exemplo, um navegador da web), o JavaScript pode ser conectado aos objetos de seu ambiente para fornecer controle programático sobre eles.</p>
+            <p class="texto">
+                O JavaScript contém uma biblioteca padrão de objetos, como Array, Map e Math, e um conjunto central de elementos de linguagem, como operadores, estruturas de controle e instruções. O JavaScript central pode ser estendido para uma variedade de propósitos, complementando-o com objetos adicionais; por exemplo: 
+            </p>
+            <ul class="lista">
+                <li>O JavaScript do lado do cliente estende a linguagem central fornecendo objetos para controlar umnavegador e seu Document Object Model (DOM). Por exemplo, as extensões do lado do cliente permitem que umaplicativo coloque elementos em um formulário HTML e responda a eventos do usuário, como cliques domouse, entrada de formulário e navegação de página. </li>
+                <li>
+                    O JavaScript do lado do servidor estende a linguagem central fornecendo objetos relevantes para aexecução do JavaScript em um servidor. Por exemplo, as extensões do lado do servidor permitem que umaplicativo se comunique com um banco de dados, forneça continuidade de informações de uma invocaçãopara outra do aplicativo ou execute manipulações de arquivo em um servidor.
+                </li>
+            </ul>
+            <p class="texto">
+                Isso significa que, no navegador, o JavaScript pode alterar a aparência da página da web (DOM). E, da mesma forma, o JavaScript do Node.js no servidor pode responder a solicitações personalizadas enviadas por código executado no navegador.
+            </p>
+        
+        <!-- ex01 -->
+        <H3 class="titulo centralizar">Caixas de diálogo em JS</H1>
+            <p class="centralizar">
+                São três tipos de caixa de diálogos
+                <ul class="lista">
+                    <li>alert: exibe uma mensagem de alerta ao usuário</li>
+                    <li>confirm: exibe uma mensagem de confirmação em que o usuário pode escolher entre ok ou cancelar</li>
+                    <li>prompt: o usuário pode entrar dados na caixa de diálogo</li>
+                
+                </ul>
+            </p>
+            <p class="texto">
+                É importante destacar que o JavaScript pode ser incorporado ao documento HTML pela tag script. O script JS pode ser interno, ou seja, dentro do documento HTML ou externo no qual será um arquivo externo js. Ainda é possível colocar comandos JS associados a eventos como no exemplo a seguir.
+            </p>
+            <div class="centralizar" class="botaocomfundo">
+                <button class="botaocomfundo" type="button" onclick="alert('Caixa de diálogo JS acionada pelo evento de clique no mouse')"> Alert </button>
+                <button class="botaocomfundo" type="button" onclick="confirm('Caixa de diálogo JS acionada pelo evento de clique no mouse')"> Confirm </button>
+                <button class="botaocomfundo" type="button" onclick="prompt('Caixa de diálogo JS acionada pelo evento de clique no mouse')"> Prompt </button>
+            </div>
+
+        <!-- ex02 -->
+        <h3 class="titulo centralizar">Variáveis</h3>
+            <p class="texto">Primeiramente é recomendado declarar a variável antes de usá-la no JavaScript, mesmo que a linguagem seja capaz de declará-la automaticamente, existem 3 tipos de declarações manuais:</p>
+            <ul class="lista">
+                <li>var - é um método mais antigo de declaração cujo é recomendada apenas ao ser destinada à navegadores antigos</li>
+                <li>let - é a versão do var mais recente, e produz quase o mesmo resultado</li>
+                <li>const - é utilzado para manter um valor constante, por exemplo definir um tempo padrão para todas as funções</li>
+            </ul>
+            <p class="texto">A diferença entre var e let, além de um ser recomendado para navegadores antigos e outro para modernos, é que o var faz com que a variável esteja disponível em toda a função, enquanto o let somente no bloco onde foi declarado.<br>Ou seja, com o let você cria varíaveis locais enquanto o var faz com que ela funcione em toda a função.</p>
+            <!-- <a class="botaocomfundo centralizar" href="exemplos.html" target="_blank">Clique aqui para ver exemplos</a> -->
+        <br>
+        <!-- JS2 ex01 -->
+        <h3 class="titulo centralizar">Estruturas Condicionais</h3>
+            <p class="texto">No JavaScript é possível criar estruturas condicionais, que, basicamente, são caminhos que o programa pode execurtar caso certos parâmetros sejam respondidos.</p>
+            <p class="texto centralizar">São estas as estruturas:</p>
+            <ul class="lista" style="margin-bottom: 0px;">
+                <li><span class="pointer" onclick="window.open('https://www.w3schools.com/js/js_if_else.asp')">if</span> - que faz executar certo bloco de comandos caso as condições sejam efetivadas</li>
+                <li><span class="pointer" onclick="window.open('https://www.w3schools.com/js/js_if_else.asp')">else</span> - deve ser utilziado após o if, este faz executar o programa executar um outro certo bloco de comandos caso as condições do if não sejam efetivadas</li>
+                <li><span class="pointer" onclick="window.open('https://www.w3schools.com/js/js_if_else.asp')">else if</span> - usado após um if, faz com que só seja verificado caso o primeiro if não execute.</li>
+                <li><span class="pointer" onclick="window.open('https://www.w3schools.com/js/js_switch.asp')">switch</span> - é uma estrutura complexa que possibilita ter acesso a diversos caminhos dependendo do valor dos parâmetros, por exemplo fazer uma estrutura condicional enorme só usando os dias da semana.</li>
+            </ul>
+            <p class="texto centralizar" style="margin-top: 0px;">Você pode clicar nesses itens para ter mais detalhes em uma fonte mais confiável.</p>
+            <!-- <a class="botaocomfundo centralizar" href="../3Trim_18_JS2/exemplos.html" target="_blank">Exemplos</a> -->
+        <br>
+        <!-- JS3 -->
+        <h3 class="titulo centralizar">Laços de Repetição</h3>
+            <p class="texto">Os Laços de Repetição no JavaScript servem para ficarem rodando um mesmo conjunto de blocos ou um único bloco até que a condição do laço seja completado.</p>
+            <p class="texto centralizar">Estes são os tipos de laços:</p>
+            <ul class="lista" style="margin-bottom: 0px;">
+                <li><span class="pointer" onclick="window.open('https://www.w3schools.com/js/js_loop_for.asp')">for</span> - que faz executar um código por x vezes até que x alcance o valor definido, ademais, x pode ser usando como controlador, por exemplo, na manipulação de arrays.</li>
+                <li><span class="pointer" onclick="window.open('https://www.w3schools.com/js/js_loop_while.asp')">while</span> - mantém o código rodando até que sua condição invalide.</li>
+            </ul>
+            <p class="texto centralizar" style="margin-top: 0px;">Você pode clicar nesses itens para ter mais detalhes em uma fonte mais confiável.</p>
+            <p class="texto">Você de parar quaisquer laço de repetição com o comando break</p>
+            <!-- <a class="botaocomfundo centralizar" href="../3Trim_18_JS3/exemplos.html" target="_blank">Exemplos</a> -->
+        <br>
+        <h3 class="titulo centralizar">Subrotinas</h3>
+            <p class="texto">Subrotinas são funções que podem serem reutilizadas de forma simples somente precisando colocar o nome da função, um exemplo é o botão de voltar ao topo ali no canto da sua tela.</p>
+            <p class="texto centralizar">Esta é uma subrotina:</p>
+            <code class="centralizar" onclick="window.open('https://www.w3schools.com/js/js_function_definition.asp#gsc.tab=0')">
+                MyFunction(){<br>
+                    return x + y <br>
+                } <br>
+                let soma = MyFunction(4,2)
+            </code>
+            <p class="texto centralizar" style="margin-top: 0px;">Você pode clicar nesses itens para ter mais detalhes em uma fonte mais confiável.</p>
+            <p class="texto">Você de parar quaisquer laço de repetição com o comando break</p>
+        <br>
+        <h3 class="titulo centralizar" onclick="window.open('https://www.w3schools.com/html/html_forms.asp')">Formulários</h3>
+            <p class="texto">Os formulários permitem ao usuário fazer entrada de dados no documento HTML. A partir desses dados que o usuário enviar pelo formulário, scripts escritos em linguagens Web como JS, PHP, Python dentre outras podem manipular esses dados.</p>
+            <p class="texto centralizar">Esta é uma subrotina:</p>
+            <p class="centralizar" style="background-color: white; padding: 10px; border-radius: 5px; margin-bottom: 0px;">
+                Entre com o valor de n1:
+                <input type="text" id="primeirovalor"><br><br>
+                Entre com o valor de n2:
+                <input type="text" id="segundovalor"><br><br>
+                <input type="button" value="Somar" onclick="somar()">
+                <div class="centralizar" id="resultado"></div>
+                <script>
+                    function somar(){
+                        var n1,n2,r
+                        n1 = parseFloat(document.getElementById("primeirovalor").value)
+                        n2 = parseFloat(document.getElementById("segundovalor").value)
+                        r = n1+n2
+                        if(Number.isNaN(r)){
+                            document.getElementById("resultado").innerHTML = `Os dados inseridos são inválidos, insira novamente.`
+                        }
+                        else{
+                            
+                            document.getElementById("resultado").innerHTML = `O resultado da soma é ${r}`
+                        }
+                        
+                        /* document.write("<p>"+r+"</p>") */
+                    }
+                </script>
+            </p>
+            <p class="texto centralizar" style="margin-top: 0px;">Você pode clicar no título para ter mais detalhes em uma fonte mais confiável.</p>
+        <br>
+    </div>
+    <img width="2%" src="img/up-arrow-svgrepo-com.svg" id="voltaraotopo" class="pointer" onclick="window.scrollTo({ top: 1, behavior: 'smooth' })" alt="voltar ao topo da página">
+</body>
+</html>

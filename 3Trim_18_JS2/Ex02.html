@@ -15,6 +15,23 @@
             </ol>
             1 - Crie um programa que leia 3 notas de alunos e diga se ele está aprovado ou reprovado a partir da sua média aritmética. Considere a média 7
             <br>
+            <code>
+                <script>
+                    var n1,n2,n3,media,resultado
+                    n1=parseFloat(prompt("Qual o valor da nota 1 "))
+                    n2=parseFloat(prompt("Qual o valor da nota 2 "))
+                    n3=parseFloat(prompt("Qual o valor da nota 3 "))
+                    media = (n1+n2+n3)/3
+                    if(media<7){
+                        resultado = "reprovado"
+                    }
+                    else{
+                        resultado = "aprovado"
+                    }
+                    alert("O aluno está "+resultado)
+                    document.write("O aluno está "+resultado)
+                </script>
+            </code>
             <script>
                 var n1,n2,n3,media,resultado
                 n1=parseFloat(prompt("Qual o valor da nota 1 "))
@@ -33,6 +50,30 @@
             <br>
             2 - Altere o programa para que peça também o percentual de frequência. Lembre-se que média 7 e frequência 75% permitem a aprovação do candidato
             <br>
+            <code>
+                <script>
+                    var resultado,n1,n2,n3,media,frequencia
+                    n1=parseFloat(prompt("Qual o valor da nota 1 "))
+                    n2=parseFloat(prompt("Qual o valor da nota 2 "))
+                    n3=parseFloat(prompt("Qual o valor da nota 3 "))
+                    media = (n1+n2+n3)/3
+                    frequencia=prompt("Qual o percentual de frequencia do aluno? ")
+                    if(frequencia>74){
+                        if(media <7){
+                            resultado = "reprovado pela média inferior de 7 ("+media+") mesmo com percentual de falta não inferior à 75% ("+frequencia+"%)"
+                            
+                        }
+                        else{
+                            resultado = "aprovado pela média inferior de 7 ("+media+") e percentual de falta não inferior à 75% ("+frequencia+"%)"
+                        }
+                    }
+                    else{
+                        resultado = "reprovado por causa do percentual de falta ser inferior à 75% ("+frequencia+"%)"
+                    }
+                    alert("O aluno está "+resultado)
+                    document.write("O aluno está "+resultado)
+                </script>
+            </code>
             <script>
                 var resultado,n1,n2,n3,media,frequencia
                 n1=parseFloat(prompt("Qual o valor da nota 1 "))
@@ -58,6 +99,33 @@
             <br>
             3 - Altere o exercício e considere que se ele tem 75% de frequência, média 7 está aprovado. Se ele tem menos de 75% de frequencia e média abaixo de 7 reprovado. Se ele tem mínimo de 75% de frequência e média 7 ou mais exame.
             <br>
+            <code>
+                
+            <script>
+                var resultado,n1,n2,n3,media,frequencia
+                var resultado,n1,n2,n3,media,frequencia
+                n1=parseFloat(prompt("Qual o valor da nota 1 "))
+                n2=parseFloat(prompt("Qual o valor da nota 2 "))
+                n3=parseFloat(prompt("Qual o valor da nota 3 "))
+                media = (n1+n2+n3)/3
+                frequencia=prompt("Qual o percentual de frequencia do aluno? ")
+                if(frequencia > 74){
+                    if(media > 6){
+                        resultado = "aprovado pela média superior à 7 ("+media+") e com percentual de falta superior à 74% ("+frequencia+"%)"
+                    }
+                }
+                else{
+                    if(media < 7){
+                        resultado = "reprovado pela média inferior de 7 ("+media+") mesmo com percentual de falta inferior à 75% ("+frequencia+"%)"
+                    }
+                    else{
+                        resultado = "com a média respeitando o mínimo ("+media+") e com percentual de falta inferior à 75% ("+frequencia+"%), necessita realizar um exame"
+                    }
+                }
+                alert("O aluno está "+resultado)
+                document.write("O aluno está "+resultado)
+            </script>
+            </code>
             <script>
                 var resultado,n1,n2,n3,media,frequencia
                 var resultado,n1,n2,n3,media,frequencia
