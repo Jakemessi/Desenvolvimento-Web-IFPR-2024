@@ -42,15 +42,24 @@
             </table> -->
             <span id="titulo">Links Externos</span>
             <div id="imagens">
-                <span id="steam">
-                    <span span onclick="window.open('https://steamcommunity.com/id/OJakemessiEHuehuller/');">
+                <span class="bloco" id="steam">
+                    <span class="bloco2" span onclick="window.open('https://steamcommunity.com/id/OJakemessiEHuehuller/');">
                     <div class="pointer">
                     </div>
                     <span class="pointer"></span>
                     </span>
                 </span>
-                <span id="github">
-                    <span onclick="window.open('https://github.com/Jakemessi');">
+                <span class="bloco" id="nexus">
+                    <span class="bloco2" onclick="window.open('https://next.nexusmods.com/profile/Jakemessi');">
+                        <div class="pointer" onmouseout="outFunc()">
+                        </div>
+                        <span class="pointer" id="textonexus">
+                            <span id="tooltip"></span>
+                        </span>
+                    </span>
+                </span>
+                <span class="bloco" id="github">
+                    <span class="bloco2" onclick="window.open('https://github.com/Jakemessi');">
                         <div class="pointer" onmouseout="outFunc()">
                         </div>
                         <span class="pointer" id="textogithub">
@@ -58,8 +67,8 @@
                         </span>
                     </span>
                 </span>
-                <span id="discord">
-                    <span onclick="Copiar()">
+                <span class="bloco" id="discord">
+                    <span class="bloco2" onclick="Copiar()">
                         <div class="pointer" onmouseout="outFunc()">
                         </div>
                         <span class="pointer" id="textodiscord">
@@ -68,6 +77,7 @@
                     </span>
                 </span>
             </div>
+            <span id="salamalenco" onclick="bomboclat()">Não clique aqui</span>
         </div>
     </div>
 </body>
