@@ -10,12 +10,9 @@ header{
   padding-bottom: 10px;
 }
 
-nav{
-  flex: 1;
-}
-
 .navegacao{
   display: flex;
+  width: 100%;
   flex-direction: row;
   overflow: hidden;
   justify-content: flex-end;
