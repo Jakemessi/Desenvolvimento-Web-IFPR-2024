@@ -21,98 +21,26 @@
         }
         img{
             width:100%;
-            transition: linear 1s;
+            transition: ease-in-out 3s;
             transition-delay: 0s;
             align-items: center;
             text-align: center;
         }
-        /* Carregamento */
-        #carregamento{
-          z-index: 10;
-          position: absolute;
-          height: 100%;
-          width: 100%;
-          display: none;
-          justify-items: center;
-          align-items: center;
-        }
-        .container {
-          --uib-size: 70px;
-          --uib-color: white;
-          --uib-speed: 1.3s;
-          --uib-bg-opacity: .1;
-          height: calc(var(--uib-size) * (2.1 / 5));
-          width: var(--uib-size);
-          transform-origin: center;
-          overflow: visible;
-        }
-
-        .car {
-          fill: none;
-          stroke: var(--uib-color);
-          stroke-dasharray: 15, 85;
-          stroke-dashoffset: 0;
-          stroke-linecap: round;
-          animation: travel var(--uib-speed) linear infinite;
-          will-change: stroke-dasharray, stroke-dashoffset;
-          transition: stroke 0.5s ease;
-        }
-
-        .track {
-          stroke: var(--uib-color);
-          opacity: var(--uib-bg-opacity);
-        }
-
-        @keyframes travel {
-          0% {
-            stroke-dashoffset: 0;
-          }
-
-          100% {
-            stroke-dashoffset: 100;
-          }
+        #imagem{
+          width: 0%;
         }
     </style>
     <script>
-        function carregar(){
-            const telacarregamento = document.getElementById('carregamento');
-            const imagem = document.getElementById('imagem');
-            imagem.style.opacity = 0;
-            telacarregamento.style.display = "grid";
-            setTimeout(muda , 3000);
-        }
-        function muda(){
-            window.location.replace("2Trim_15_TrilhaDeAprendizado/index.html");
-        }
+        window.onload = (event) => {
+          const imagem = document.getElementById('imagem');
+          imagem.style.width="100%";
+          setTimeout(function(){
+          window.location.replace("2Trim_15_TrilhaDeAprendizado/index.html");
+          }, 3000);
+        };
     </script>
 </head>
 <body>
-    <span onclick="carregar()"><img src="2Trim_15_TrilhaDeAprendizado/img/logo.png" alt="Trilha do Aprendizado" id="imagem"></span>
-    <div id="carregamento">
-        <svg
-          class="container" 
-          x="0px" 
-          y="0px"
-          viewBox="0 0 55 23.1"
-          height="23.1"
-          width="55"
-          preserveAspectRatio='xMidYMid meet'
-        >
-          <path
-            class="track" 
-            fill="none" 
-            stroke-width="4" 
-            pathlength="100"
-            d="M26.7,12.2c3.5,3.4,7.4,7.8,12.7,7.8c5.5,0,9.6-4.4,9.6-9.5C49,5,45.1,1,39.8,1c-5.5,0-9.5,4.2-13.1,7.8l-3.4,3.3c-3.6,3.6-7.6,7.8-13.1,7.8C4.9,20,1,16,1,10.5C1,5.4,5.1,1,10.6,1c5.3,0,9.2,4.5,12.7,7.8L26.7,12.2z"
-          />
-          <path
-            class="car" 
-            fill="none" 
-            stroke-width="4" 
-            pathlength="100"
-            d="M26.7,12.2c3.5,3.4,7.4,7.8,12.7,7.8c5.5,0,9.6-4.4,9.6-9.5C49,5,45.1,1,39.8,1c-5.5,0-9.5,4.2-13.1,7.8l-3.4,3.3c-3.6,3.6-7.6,7.8-13.1,7.8C4.9,20,1,16,1,10.5C1,5.4,5.1,1,10.6,1c5.3,0,9.2,4.5,12.7,7.8L26.7,12.2z"
-          />
-        </svg>
-    </div>
+    <span><img src="2Trim_15_TrilhaDeAprendizado/img/logo.png" alt="Trilha do Aprendizado" id="imagem"></span>
 </body>
 </html>
