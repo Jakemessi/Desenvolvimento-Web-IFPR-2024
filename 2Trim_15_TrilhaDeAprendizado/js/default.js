@@ -1,9 +1,21 @@
 function bomboclat(){
+    var elem = document.documentElement;
+
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.webkitRequestFullscreen) { /* Safari */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE11 */
+      elem.msRequestFullscreen();
+    }
+
+    const musica = document.getElementById("musica")
     const videodiv = document.getElementById("surpresa");
     const vidio = document.getElementById("vidio");
     const aviso = document.getElementById("surpresaaviso")
     videodiv.style.backgroundImage = null;
     videodiv.style.display  = "grid";
+    musica.pause()
     surpresaaviso.style.display = "grid";
     setTimeout(bomboclat2 , 3000);
 }
@@ -24,4 +36,13 @@ function bomboclat3(){
 function bomboclat4(){
     const videodiv = document.getElementById("surpresa");
     videodiv.style.display = "none";
+    const musica = document.getElementById("musica")
+    musica.play()
+    if (document.exitFullscreen) {
+      document.exitFullscreen();
+    } else if (document.webkitExitFullscreen) { /* Safari */
+      document.webkitExitFullscreen();
+    } else if (document.msExitFullscreen) { /* IE11 */
+      document.msExitFullscreen();
+    }
 }
