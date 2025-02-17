@@ -32,3 +32,6 @@
 .descricaotexto{
     width: 50%;
 }
+#tabela td{
+    text-align: center;
+}
