@@ -10,6 +10,10 @@ header{
   padding-bottom: 10px;
 }
 
+nav{
+  flex: 1;
+}
+
 .navegacao{
   display: flex;
   width: 100%;

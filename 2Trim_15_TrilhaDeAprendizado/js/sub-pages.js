@@ -16,7 +16,6 @@ function subpages(cavalo){
     }
     if(cavalo == 'sub-pages/inicio.html'){
         iniciobotao.style.color = "white";
-        iniciobotao.style.flex = "3";
         projetobotao.style.color = "darkgrey";
         sobrebotao.style.color = "darkgrey";
         conteudosbotao.style.color = "darkgrey";

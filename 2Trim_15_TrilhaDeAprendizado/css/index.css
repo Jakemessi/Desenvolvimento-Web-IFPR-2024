@@ -3,7 +3,7 @@ body,html{
     background-image: linear-gradient(to right,#161616,#161616);
     background-color: #161616;
     scrollbar-width: none;
-    width: auto;
+    width: 100vw;
     height: 100%;
     display: grid;
     margin: 0px;
@@ -14,6 +14,7 @@ body,html{
     justify-content: center;
     align-content: center;
     align-items: center;
+    width: 100vw;
 }
 .principal{
     padding-bottom: 20px;
@@ -78,4 +79,7 @@ button {
 nav{
     display: flex;
     justify-content: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
 }
