@@ -1,12 +1,4 @@
 .projetoinicio{
-    /* display: grid;
-    height: 700px;
-    justify-items: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    background-color: black;
-    position: relative; */
     background-image: url(../img/logo.png);
     background-attachment: fixed; /* Fixa a imagem no fundo da tela enquanto a página é scrolada*/
     background-position: center; /* Cetraliza a imagem no centro da tela indepedente do dimensionamento da tela */
@@ -14,7 +6,7 @@
     background-size: auto; /* Redimensiona a imagem de acordo com a tela do dispositivo mantendo a proporção */
     position: relative;
     width: 100%;
-    height: 730px;
+    height: 100vh;
     background-color: #161616;
 }
 .projetoinicio img{
