@@ -205,8 +205,12 @@
 #textodiscord:before {
     content: "Discord"
 }
+#textodiscord {
+    text-align: center;
+    align-items: center;
+}
 #discord span div:hover{
-    background-image: url(https://cdn.discordapp.com/avatars/321282239663177730/9616a5e57e8b7e83d11b911e00e77e77.webp?size=128);
+    background-image: url(https://cdn.discordapp.com/avatars/321282239663177730/f3fe045462fbbf213031095db64ae593.png?size=2048);
 }
 #discord span div:hover + span:before{
     content: "Huehuller";
@@ -216,9 +220,12 @@
     flex-direction: column;
     align-items: center;
 } */
-#tooltip {
-    padding-top: 36px;
+#discordtooltip {
+    position: absolute;
     transition: all 0.5s ease-in-out;
-    float: right;
+    float: left;
     z-index: 1;
+    left: 54%;
+    right: 0px;
+    padding-top: 10px;
 }

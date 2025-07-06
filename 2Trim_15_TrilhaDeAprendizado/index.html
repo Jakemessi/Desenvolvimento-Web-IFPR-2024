@@ -12,16 +12,17 @@
     <link rel="stylesheet" href="css/sobrestyle.css">
     <script type="text/javascript" src="js/sub-pages.js" id="main"></script>
     <script type="text/javascript" src="js/default.js" id="main"></script>
+    <script type="text/javascript" src="js/home.js" id="main"></script>
     <script>
         function Copiar(){
         var usuariodiscord = new String("huehuller");
         navigator.clipboard.writeText(usuariodiscord);
-        var tooltip = document.getElementById("tooltip");
+        var tooltip = document.getElementById("discordtooltip");
         tooltip.style.opacity = 1;
-        tooltip.innerHTML = "Copiado, cole na aba amigos do discord";
+        tooltip.innerHTML = "Copiado, cole na <br>aba amigos do discord";
         }
         function outFunc() {
-          var tooltip = document.getElementById("tooltip");
+          var tooltip = document.getElementById("discordtooltip");
           tooltip.style.opacity = 0;
         }
     </script>
@@ -75,7 +76,7 @@
             <span>&copy Todos direitos reservados</span>
             
         </div>
-        <audio id="musica" style="position: fixed; bottom: -10px; left: -10px; border-radius: 10px; padding-bottom: 10px; padding-left: 10px; background-color: transparent;"  controls loop autoplay>
+        <audio id="musica" style="position: fixed; bottom: -10px; left: -10px; border-radius: 10px; padding-bottom: 10px; padding-left: 10px; background-color: transparent;"  controls loop autoplay onloadstart="SetarVolume()">
             <source src="img/Ice Cube - Until we Rich .mp3" type="audio/mpeg">
             Para sua felicidade, não existe suporte ao aúdio nesse navegador
         </audio> 
